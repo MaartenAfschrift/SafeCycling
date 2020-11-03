@@ -1,0 +1,2210 @@
+Start batch processing
+02-Nov-2020
+Start processing file: E:\Data\Fietsproef\RawData\pp_1\Classic\trial_000
+      - Warning: only 0.92252 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_1\Classic\trial_000-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_1\Classic\trial_002
+      - Warning: only 0.93864 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_1\Classic\trial_002-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_1\Classic\trial_004
+      - Warning: only 0.89873 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_1\Classic\trial_004-000_00342392.txt
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_1\EBike\trial_000
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_1\EBike\trial_002
+      - Warning: only 0.94242 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_1\EBike\trial_002-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_1\EBike\trial_004
+      - Warning: only 0.93514 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_1\EBike\trial_004-000_00342392.txt
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_2\Classic\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_2\Classic\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_2\EBike\trial_000
+      - 13 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_2\EBike\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_2\EBike\trial_004
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_3\Classic\trial_000
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_3\Classic\E:\Data\Fietsproef\RawData\pp_3\Classic\trial_000-000_00341911.txt
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_3\Classic\E:\Data\Fietsproef\RawData\pp_3\Classic\trial_000-000_00341912.txt
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_3\Classic\E:\Data\Fietsproef\RawData\pp_3\Classic\trial_000-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_3\Classic\trial_002
+      - Warning: only 0.80068 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_3\Classic\trial_002-000_00342392.txt
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_3\Classic\trial_004
+      - Warning: only 0.84542 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_3\Classic\trial_004-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_3\EBike\trial_000
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_3\EBike\E:\Data\Fietsproef\RawData\pp_3\EBike\trial_000-000_00341911.txt
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_3\EBike\E:\Data\Fietsproef\RawData\pp_3\EBike\trial_000-000_00341912.txt
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_3\EBike\E:\Data\Fietsproef\RawData\pp_3\EBike\trial_000-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_3\EBike\trial_002
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_3\EBike\E:\Data\Fietsproef\RawData\pp_3\EBike\trial_002-000_00341911.txt
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_3\EBike\E:\Data\Fietsproef\RawData\pp_3\EBike\trial_002-000_00341912.txt
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_3\EBike\E:\Data\Fietsproef\RawData\pp_3\EBike\trial_002-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_3\EBike\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_4\Classic\trial_000
+      - Warning: only 0.88176 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_4\Classic\trial_000-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_4\Classic\trial_004
+      - Warning: only 0.8925 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_4\Classic\trial_004-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_4\EBike\trial_002-kalibratie
+      - Warning: only 0.72077 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_4\EBike\trial_002-kalibratie-000_00342392.txt
+      - 3 triggers detected in file
+      - Only : 3 events detected in file E:\Data\Fietsproef\RawData\pp_4\EBike\trial_002-kalibratie
+Start processing file: E:\Data\Fietsproef\RawData\pp_4\EBike\trial_004
+      - Warning: only 0.84729 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_4\EBike\trial_004-000_00342392.txt
+      - 14 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_4\EBike\trial_006
+      - Warning: only 0.88699 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_4\EBike\trial_006-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_4\EBike\trial_008
+      - Warning: only 0.87941 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_4\EBike\trial_008-000_00342392.txt
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_6\Classic\trial_000
+      - Warning: only 0.94938 % of the data captured in sensor on KneeR in file E:\Data\Fietsproef\RawData\pp_6\Classic\trial_000-000_00341912.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_6\Classic\trial_002
+      - Warning: only 0.94489 % of the data captured in sensor on KneeR in file E:\Data\Fietsproef\RawData\pp_6\Classic\trial_002-000_00341912.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_6\Classic\trial_004
+      - Warning: only 0.94556 % of the data captured in sensor on KneeR in file E:\Data\Fietsproef\RawData\pp_6\Classic\trial_004-000_00341912.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_6\EBike\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_6\EBike\trial_002
+      - Warning: only 0.92374 % of the data captured in sensor on KneeR in file E:\Data\Fietsproef\RawData\pp_6\EBike\trial_002-000_00341912.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_6\EBike\trial_004
+      - Warning: only 0.9477 % of the data captured in sensor on KneeR in file E:\Data\Fietsproef\RawData\pp_6\EBike\trial_004-000_00341912.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_7\Classic\trial_000
+      - Warning: only 0.91221 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_7\Classic\trial_000-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_7\Classic\trial_002
+      - 9 triggers detected in file
+      - Only : 9 events detected in file E:\Data\Fietsproef\RawData\pp_7\Classic\trial_002
+Start processing file: E:\Data\Fietsproef\RawData\pp_7\Classic\trial_004
+      - Warning: only 0.90319 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_7\Classic\trial_004-000_00342392.txt
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_7\EBike\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_7\EBike\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_7\EBike\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_8\Classic\trial_000
+      - Warning: only 0.84711 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_8\Classic\trial_000-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_8\Classic\trial_002
+      - Warning: only 0.93135 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_8\Classic\trial_002-000_00342392.txt
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_8\Classic\trial_004
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_8\Classic\E:\Data\Fietsproef\RawData\pp_8\Classic\trial_004-000_00341911.txt
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_8\Classic\E:\Data\Fietsproef\RawData\pp_8\Classic\trial_004-000_00341912.txt
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_8\Classic\E:\Data\Fietsproef\RawData\pp_8\Classic\trial_004-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_8\EBike\trial_000
+      - Warning: only 0.7709 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_8\EBike\trial_000-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_8\EBike\trial_002
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_8\EBike\E:\Data\Fietsproef\RawData\pp_8\EBike\trial_002-000_00341911.txt
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_8\EBike\E:\Data\Fietsproef\RawData\pp_8\EBike\trial_002-000_00341912.txt
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_8\EBike\E:\Data\Fietsproef\RawData\pp_8\EBike\trial_002-000_00342392.txt
+      - 9 triggers detected in file
+      - Only : 9 events detected in file E:\Data\Fietsproef\RawData\pp_8\EBike\trial_002
+Start processing file: E:\Data\Fietsproef\RawData\pp_8\EBike\trial_004
+      - Warning: only 0.89813 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_8\EBike\trial_004-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_9\Classic\trial_000
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_9\Classic\E:\Data\Fietsproef\RawData\pp_9\Classic\trial_000-000_00341911.txt
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_9\Classic\E:\Data\Fietsproef\RawData\pp_9\Classic\trial_000-000_00341912.txt
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_9\Classic\E:\Data\Fietsproef\RawData\pp_9\Classic\trial_000-000_00342392.txt
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_9\Classic\trial_002
+      - Warning: only 0.92122 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_9\Classic\trial_002-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_9\Classic\trial_004
+      - Warning: only 0.9289 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_9\Classic\trial_004-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_9\EBike\trial_000
+      - Warning: only 0.94257 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_9\EBike\trial_000-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_9\EBike\trial_002
+      - Warning: only 0.89388 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_9\EBike\trial_002-000_00342392.txt
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_9\EBike\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_10\Classic\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_10\Classic\trial_002
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_10\Classic\trial_004
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_10\EBike\trial_000
+      - 13 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_10\EBike\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_10\EBike\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_11\Classic\trial_000
+      - Warning: only 0.86508 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_11\Classic\trial_000-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_11\Classic\trial_002
+      - Warning: only 0.89945 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_11\Classic\trial_002-000_00342392.txt
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_11\Classic\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_11\EBike\trial_000
+      - Warning: only 0.91717 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_11\EBike\trial_000-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_11\EBike\trial_002
+      - Warning: only 0.90763 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_11\EBike\trial_002-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_11\EBike\trial_004
+      - Warning: only 0.93126 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_11\EBike\trial_004-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_12\Classic\trial_000
+      - Warning: only 0.94122 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_12\Classic\trial_000-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_12\Classic\trial_002
+      - Warning: only 0.94113 % of the data captured in sensor on KneeR in file E:\Data\Fietsproef\RawData\pp_12\Classic\trial_002-000_00341912.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_12\Classic\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_12\EBike\trial_000
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_12\EBike\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_12\EBike\trial_004
+      - Warning: only 0.94937 % of the data captured in sensor on KneeR in file E:\Data\Fietsproef\RawData\pp_12\EBike\trial_004-000_00341912.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_13\Classic\trial_000
+      - Warning: only 0.92459 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_13\Classic\trial_000-000_00342392.txt
+      - 13 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_13\Classic\trial_002
+      - Warning: only 0.94015 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_13\Classic\trial_002-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_13\Classic\trial_004
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_13\Classic\E:\Data\Fietsproef\RawData\pp_13\Classic\trial_004-000_00341911.txt
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_13\Classic\E:\Data\Fietsproef\RawData\pp_13\Classic\trial_004-000_00341912.txt
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_13\Classic\E:\Data\Fietsproef\RawData\pp_13\Classic\trial_004-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_13\EBike\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_13\EBike\trial_002
+      - Warning: only 0.93079 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_13\EBike\trial_002-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_13\EBike\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_14\Classic\trial_000
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_14\Classic\E:\Data\Fietsproef\RawData\pp_14\Classic\trial_000-000_00341911.txt
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_14\Classic\E:\Data\Fietsproef\RawData\pp_14\Classic\trial_000-000_00341912.txt
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_14\Classic\E:\Data\Fietsproef\RawData\pp_14\Classic\trial_000-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_14\Classic\trial_002
+      - Warning: only 0.9028 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_14\Classic\trial_002-000_00342392.txt
+      - 13 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_14\Classic\trial_004
+      - Warning: only 0.86112 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_14\Classic\trial_004-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_14\EBike\trial_000
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_14\EBike\E:\Data\Fietsproef\RawData\pp_14\EBike\trial_000-000_00341911.txt
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_14\EBike\E:\Data\Fietsproef\RawData\pp_14\EBike\trial_000-000_00341912.txt
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_14\EBike\E:\Data\Fietsproef\RawData\pp_14\EBike\trial_000-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_14\EBike\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_14\EBike\trial_004
+      - Warning: only 0.89371 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_14\EBike\trial_004-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_15\Classic\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_15\Classic\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_15\Classic\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_15\EBike\trial_000
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_15\EBike\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_15\EBike\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_16\Classic\trial_000
+      - 13 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_16\Classic\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_16\Classic\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_16\EBike\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_16\EBike\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_16\EBike\trial_004
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_17\Classic\trial_000
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_17\Classic\trial_002
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_17\Classic\trial_004
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_17\EBike\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_17\EBike\trial_002
+      - 9 triggers detected in file
+      - Only : 9 events detected in file E:\Data\Fietsproef\RawData\pp_17\EBike\trial_002
+Start processing file: E:\Data\Fietsproef\RawData\pp_17\EBike\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_18\Classic\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_18\Classic\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_18\Classic\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_18\EBike\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_18\EBike\trial_002
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_18\EBike\trial_004
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_19\Classic\trial_000
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_19\Classic\E:\Data\Fietsproef\RawData\pp_19\Classic\trial_000-000_00341911.txt
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_19\Classic\E:\Data\Fietsproef\RawData\pp_19\Classic\trial_000-000_00341912.txt
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_19\Classic\E:\Data\Fietsproef\RawData\pp_19\Classic\trial_000-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_19\Classic\trial_002
+      - Warning: only 0.73694 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_19\Classic\trial_002-000_00342392.txt
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_19\Classic\trial_004
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_19\Classic\E:\Data\Fietsproef\RawData\pp_19\Classic\trial_004-000_00341911.txt
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_19\Classic\E:\Data\Fietsproef\RawData\pp_19\Classic\trial_004-000_00341912.txt
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_19\Classic\E:\Data\Fietsproef\RawData\pp_19\Classic\trial_004-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_19\EBike\trial_000
+      - Warning: only 0.85592 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_19\EBike\trial_000-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_19\EBike\trial_002
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_19\EBike\trial_004
+      - Warning: only 0.88627 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_19\EBike\trial_004-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_20\Classic\trial_000
+      - Warning: only 0.93094 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_20\Classic\trial_000-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_20\Classic\trial_002
+      - Warning: only 0.92288 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_20\Classic\trial_002-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_20\Classic\trial_004
+      - Warning: only 0.92916 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_20\Classic\trial_004-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_20\EBike\trial_000
+      - Warning: only 0.88941 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_20\EBike\trial_000-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_20\EBike\trial_002
+      - Warning: only 0.91062 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_20\EBike\trial_002-000_00342392.txt
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_20\EBike\trial_004
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_21\Classic\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_21\Classic\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_21\Classic\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_21\EBike\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_21\EBike\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_21\EBike\trial_004
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_22\Classic\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_22\Classic\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_22\Classic\trial_004
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_22\Classic\trial_slecht
+       - No trigger pulse in trigger pulse in file: E:\Data\Fietsproef\RawData\pp_22\Classic\trial_slecht
+      - 0 triggers detected in file
+      - Only : 0 events detected in file E:\Data\Fietsproef\RawData\pp_22\Classic\trial_slecht
+Start processing file: E:\Data\Fietsproef\RawData\pp_22\EBike\trial_000
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_22\EBike\E:\Data\Fietsproef\RawData\pp_22\EBike\trial_000-000_00341911.txt
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_22\EBike\E:\Data\Fietsproef\RawData\pp_22\EBike\trial_000-000_00341912.txt
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_22\EBike\E:\Data\Fietsproef\RawData\pp_22\EBike\trial_000-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_22\EBike\trial_002-slecht
+       - Unknown error in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_22\EBike\trial_003-slecht
+       - Unknown error in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_22\EBike\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_23\Classic\trial_000
+      - Warning: only 0.94577 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_23\Classic\trial_000-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_23\Classic\trial_002
+      - Warning: only 0.92853 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_23\Classic\trial_002-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_23\Classic\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_23\EBike\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_23\EBike\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_23\EBike\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_24\Classic\trial_000
+      - 13 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_24\Classic\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_24\Classic\trial_004
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_24\EBike\trial_000
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_24\EBike\E:\Data\Fietsproef\RawData\pp_24\EBike\trial_000-000_00341911.txt
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_24\EBike\E:\Data\Fietsproef\RawData\pp_24\EBike\trial_000-000_00341912.txt
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_24\EBike\E:\Data\Fietsproef\RawData\pp_24\EBike\trial_000-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_24\EBike\trial_002
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_24\EBike\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_25\Classic\trial_000
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_25\Classic\E:\Data\Fietsproef\RawData\pp_25\Classic\trial_000-000_00341911.txt
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_25\Classic\E:\Data\Fietsproef\RawData\pp_25\Classic\trial_000-000_00341912.txt
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_25\Classic\E:\Data\Fietsproef\RawData\pp_25\Classic\trial_000-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_25\Classic\trial_002
+      - Warning: only 0.89876 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_25\Classic\trial_002-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_25\Classic\trial_004
+      - Warning: only 0.87308 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_25\Classic\trial_004-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_25\EBike\trial_000
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_25\EBike\E:\Data\Fietsproef\RawData\pp_25\EBike\trial_000-000_00341911.txt
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_25\EBike\E:\Data\Fietsproef\RawData\pp_25\EBike\trial_000-000_00341912.txt
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_25\EBike\E:\Data\Fietsproef\RawData\pp_25\EBike\trial_000-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_25\EBike\trial_002
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_25\EBike\E:\Data\Fietsproef\RawData\pp_25\EBike\trial_002-000_00341911.txt
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_25\EBike\E:\Data\Fietsproef\RawData\pp_25\EBike\trial_002-000_00341912.txt
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_25\EBike\E:\Data\Fietsproef\RawData\pp_25\EBike\trial_002-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_25\EBike\trial_004
+      - Warning: only 0.81322 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_25\EBike\trial_004-000_00342392.txt
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_26\Classic\trial_000
+      - Warning: only 0.92819 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_26\Classic\trial_000-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_26\Classic\trial_002
+      - Warning: only 0.94364 % of the data captured in sensor on KneeR in file E:\Data\Fietsproef\RawData\pp_26\Classic\trial_002-000_00341912.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_26\Classic\trial_004
+      - Warning: only 0.93346 % of the data captured in sensor on KneeR in file E:\Data\Fietsproef\RawData\pp_26\Classic\trial_004-000_00341912.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_26\EBike\trial_000
+      - Warning: only 0.92417 % of the data captured in sensor on KneeR in file E:\Data\Fietsproef\RawData\pp_26\EBike\trial_000-000_00341912.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_26\EBike\trial_002
+      - Warning: only 0.93484 % of the data captured in sensor on KneeR in file E:\Data\Fietsproef\RawData\pp_26\EBike\trial_002-000_00341912.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_26\EBike\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_27\Classic\trial_000
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_27\Classic\E:\Data\Fietsproef\RawData\pp_27\Classic\trial_000-000_00341911.txt
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_27\Classic\E:\Data\Fietsproef\RawData\pp_27\Classic\trial_000-000_00341912.txt
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_27\Classic\E:\Data\Fietsproef\RawData\pp_27\Classic\trial_000-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_27\Classic\trial_002
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_27\Classic\trial_004
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_27\EBike\trial_000
+      - 13 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_27\EBike\trial_002
+      - Warning: only 0.94654 % of the data captured in sensor on KneeR in file E:\Data\Fietsproef\RawData\pp_27\EBike\trial_002-000_00341912.txt
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_27\EBike\trial_004
+      - Warning: only 0.93048 % of the data captured in sensor on KneeR in file E:\Data\Fietsproef\RawData\pp_27\EBike\trial_004-000_00341912.txt
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_28\Classic\trial_000
+      - Warning: only 0.89854 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_28\Classic\trial_000-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_28\Classic\trial_002
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_28\Classic\trial_004
+      - Warning: only 0.88208 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_28\Classic\trial_004-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_28\EBike\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_28\EBike\trial_002
+      - Warning: only 0.94425 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_28\EBike\trial_002-000_00342392.txt
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_28\EBike\trial_004
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_29\Classic\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_29\Classic\trial_002
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_29\Classic\trial_004
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_29\EBike\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_29\EBike\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_29\EBike\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_30\Classic\trial_000
+      - Warning: only 0.92226 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_30\Classic\trial_000-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_30\Classic\trial_002
+      - Warning: only 0.73212 % of the data captured in sensor on KneeL in file E:\Data\Fietsproef\RawData\pp_30\Classic\trial_002-000_00341911.txt
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_30\Classic\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_30\EBike\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_30\EBike\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_30\EBike\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_31\Classic\trial_000
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_31\Classic\trial_002
+      - Warning: only 0.94894 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_31\Classic\trial_002-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_31\Classic\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_31\EBike\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_31\EBike\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_31\EBike\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_32\Classic\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_32\Classic\trial_002
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_32\Classic\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_32\EBike\trial_000
+      - Warning: only 0.90841 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_32\EBike\trial_000-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_32\EBike\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_32\EBike\trial_004
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_33\Classic\trial_000
+      - Warning: only 0.87076 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_33\Classic\trial_000-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_33\Classic\trial_002
+      - Warning: only 0.85311 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_33\Classic\trial_002-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_33\Classic\trial_004
+      - Warning: only 0.86747 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_33\Classic\trial_004-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_33\EBike\trial_002
+      - Warning: only 0.90088 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_33\EBike\trial_002-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_33\EBike\trial_004
+      - Warning: only 0.86807 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_33\EBike\trial_004-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_34\Classic\trial_000
+      - 13 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_34\Classic\trial_002
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_34\Classic\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_34\EBike\trial_000
+      - Warning: only 0.93498 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_34\EBike\trial_000-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_34\EBike\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_34\EBike\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_35\Classic\trial_000
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_35\Classic\trial_002
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_35\Classic\trial_004
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_35\EBike\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_35\EBike\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_35\EBike\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_36\Classic\trial_000
+      - Warning: only 0.94662 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_36\Classic\trial_000-000_00342392.txt
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_36\Classic\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_36\Classic\trial_004
+      - Warning: only 0.90104 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_36\Classic\trial_004-000_00342392.txt
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_36\EBike\trial_000
+      - Warning: only 0.94952 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_36\EBike\trial_000-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_36\EBike\trial_002
+      - Warning: only 0.8923 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_36\EBike\trial_002-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_36\EBike\trial_004
+      - Warning: only 0.91372 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_36\EBike\trial_004-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_37\Classic\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_37\Classic\trial_002
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_37\Classic\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_37\EBike\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_37\EBike\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_38\Classic\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_38\Classic\trial_002
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_38\Classic\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_38\EBike\trial_000
+      - Warning: only 0.79471 % of the data captured in sensor on KneeL in file E:\Data\Fietsproef\RawData\pp_38\EBike\trial_000-000_00341911.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_38\EBike\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_38\EBike\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_39\Classic\trial_000
+      - Warning: only 0.82734 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_39\Classic\trial_000-000_00342392.txt
+      - 13 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_39\Classic\trial_002
+      - Warning: only 0.86604 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_39\Classic\trial_002-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_39\Classic\trial_004
+      - Warning: only 0.76776 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_39\Classic\trial_004-000_00342392.txt
+      - 9 triggers detected in file
+      - Only : 9 events detected in file E:\Data\Fietsproef\RawData\pp_39\Classic\trial_004
+Start processing file: E:\Data\Fietsproef\RawData\pp_39\EBike\trial_000
+      - Warning: only 0.86151 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_39\EBike\trial_000-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_39\EBike\trial_002
+      - Warning: only 0.81801 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_39\EBike\trial_002-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_39\EBike\trial_004
+      - Warning: only 0.85099 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_39\EBike\trial_004-000_00342392.txt
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_40\Classic\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_40\Classic\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_40\Classic\trial_004
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_40\EBike\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_40\EBike\trial_002
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_40\EBike\trial_004
+      - Warning: only 0.93748 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_40\EBike\trial_004-000_00342392.txt
+      - 9 triggers detected in file
+      - Only : 9 events detected in file E:\Data\Fietsproef\RawData\pp_40\EBike\trial_004
+Start processing file: E:\Data\Fietsproef\RawData\pp_41\Classic\trial_000
+      - 13 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_41\Classic\trial_002
+      - Warning: only 0.87483 % of the data captured in sensor on KneeR in file E:\Data\Fietsproef\RawData\pp_41\Classic\trial_002-000_00341912.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_41\Classic\trial_004
+      - Warning: only 0.88444 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_41\Classic\trial_004-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_41\EBike\trial_000
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_41\EBike\trial_002
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_41\EBike\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_42\Classic\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_42\Classic\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_42\Classic\trial_004
+      - Warning: only 0.93226 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_42\Classic\trial_004-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_42\EBike\trial_000
+      - 13 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_42\EBike\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_42\EBike\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_43\Classic\trial_000
+      - Warning: only 0.94269 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_43\Classic\trial_000-000_00342392.txt
+      - 13 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_43\Classic\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_43\Classic\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_43\EBike\trial_000
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_43\EBike\trial_002
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_43\EBike\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_44\Classic\trial_000
+      - Warning: only 0.94871 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_44\Classic\trial_000-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_44\Classic\trial_002
+      - Warning: only 0.93549 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_44\Classic\trial_002-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_44\Classic\trial_004
+      - Warning: only 0.92975 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_44\Classic\trial_004-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_44\EBike\trial_000
+      - Warning: only 0.93013 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_44\EBike\trial_000-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_44\EBike\trial_002
+      - Warning: only 0.92773 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_44\EBike\trial_002-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_44\EBike\trial_004
+      - Warning: only 0.92421 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_44\EBike\trial_004-000_00342392.txt
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_45\Classic\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_45\Classic\trial_002
+      - 13 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_45\Classic\trial_004
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_45\EBike\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_45\EBike\trial_002
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_45\EBike\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_46\Classic\trial_000
+      - Warning: only 0.90707 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_46\Classic\trial_000-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_46\Classic\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_46\Classic\trial_004
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_46\EBike\trial_000
+      - Warning: only 0.93248 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_46\EBike\trial_000-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_46\EBike\trial_002
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_46\EBike\trial_004
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_47\Classic\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_47\Classic\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_47\Classic\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_47\EBike\trial_000
+      - Warning: only 0.92438 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_47\EBike\trial_000-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_47\EBike\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_47\EBike\trial_004
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_48\Classic\trial_000
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_48\Classic\E:\Data\Fietsproef\RawData\pp_48\Classic\trial_000-000_00341911.txt
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_48\Classic\E:\Data\Fietsproef\RawData\pp_48\Classic\trial_000-000_00341912.txt
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_48\Classic\E:\Data\Fietsproef\RawData\pp_48\Classic\trial_000-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_48\Classic\trial_002
+      - Warning: only 0.94497 % of the data captured in sensor on KneeR in file E:\Data\Fietsproef\RawData\pp_48\Classic\trial_002-000_00341912.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_48\Classic\trial_004
+      - Warning: only 0.59217 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_48\Classic\trial_004-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_48\EBike\trial_000
+      - Warning: only 0.92422 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_48\EBike\trial_000-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_48\EBike\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_48\EBike\trial_004
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_49\Classic\trial_000
+      - Warning: only 0.94914 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_49\Classic\trial_000-000_00342392.txt
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_49\Classic\trial_002
+      - Warning: only 0.94 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_49\Classic\trial_002-000_00342392.txt
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_49\Classic\trial_004
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_49\EBike\trial_000
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_49\EBike\E:\Data\Fietsproef\RawData\pp_49\EBike\trial_000-000_00341911.txt
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_49\EBike\E:\Data\Fietsproef\RawData\pp_49\EBike\trial_000-000_00341912.txt
+       - Warning: not all data included in file E:\Data\Fietsproef\RawData\pp_49\EBike\E:\Data\Fietsproef\RawData\pp_49\EBike\trial_000-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_49\EBike\trial_002
+      - Warning: only 0.94156 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_49\EBike\trial_002-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_49\EBike\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_50\Classic\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_50\Classic\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_50\Classic\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_50\EBike\trial_000
+      - Warning: only 0.92736 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_50\EBike\trial_000-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_50\EBike\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_50\EBike\trial_004
+      - Warning: only 0.92288 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_50\EBike\trial_004-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_51\Classic\trial_000
+      - Warning: only 0.8944 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_51\Classic\trial_000-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_51\Classic\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_51\Classic\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_51\EBike\trial_000
+      - Warning: only 0.92222 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_51\EBike\trial_000-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_51\EBike\trial_002
+      - Warning: only 0.89761 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_51\EBike\trial_002-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_51\EBike\trial_004
+      - Warning: only 0.89759 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_51\EBike\trial_004-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_52\Classic\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_52\Classic\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_52\Classic\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_52\EBike\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_52\EBike\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_52\EBike\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_53\Classic\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_53\Classic\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_53\Classic\trial_004
+      - Warning: only 0.93291 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_53\Classic\trial_004-000_00342392.txt
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_53\EBike\trial_000
+      - Warning: only 0.92668 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_53\EBike\trial_000-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_53\EBike\trial_002
+      - Warning: only 0.94407 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_53\EBike\trial_002-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_53\EBike\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_54\Classic\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_54\Classic\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_54\Classic\trial_004
+      - Warning: only 0.90994 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_54\Classic\trial_004-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_54\EBike\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_54\EBike\trial_002
+      - Warning: only 0.94951 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_54\EBike\trial_002-000_00342392.txt
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_54\EBike\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_55\Classic\trial_000
+      - Warning: only 0.93183 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_55\Classic\trial_000-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_55\Classic\trial_002
+      - Warning: only 0.94033 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_55\Classic\trial_002-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_55\Classic\trial_004
+      - Warning: only 0.87908 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_55\Classic\trial_004-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_55\EBike\trial_000
+      - Warning: only 0.89656 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_55\EBike\trial_000-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_55\EBike\trial_002
+      - Warning: only 0.91111 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_55\EBike\trial_002-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_55\EBike\trial_004
+      - Warning: only 0.8805 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_55\EBike\trial_004-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_56\Classic\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_56\Classic\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_56\Classic\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_56\EBike\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_56\EBike\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_56\EBike\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_57\Classic\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_57\Classic\trial_002
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_57\Classic\trial_004
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_57\EBike\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_57\EBike\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_57\EBike\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_58\Classic\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_58\Classic\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_58\Classic\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_58\EBike\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_58\EBike\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_58\EBike\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_59\Classic\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_59\Classic\trial_002
+      - Warning: only 0.87729 % of the data captured in sensor on KneeR in file E:\Data\Fietsproef\RawData\pp_59\Classic\trial_002-000_00341912.txt
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_59\Classic\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_59\EBike\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_59\EBike\trial_002
+      - 9 triggers detected in file
+      - Only : 9 events detected in file E:\Data\Fietsproef\RawData\pp_59\EBike\trial_002
+Start processing file: E:\Data\Fietsproef\RawData\pp_59\EBike\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_60\Classic\trial_000
+      - 13 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_60\Classic\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_60\Classic\trial_004
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_60\EBike\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_60\EBike\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_60\EBike\trial_004
+      - Warning: only 0.94179 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_60\EBike\trial_004-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_61\Classic\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_61\Classic\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_61\Classic\trial_004
+      - Warning: only 0.93693 % of the data captured in sensor on KneeR in file E:\Data\Fietsproef\RawData\pp_61\Classic\trial_004-000_00341912.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_61\EBike\trial_000
+      - Warning: only 0.94833 % of the data captured in sensor on KneeR in file E:\Data\Fietsproef\RawData\pp_61\EBike\trial_000-000_00341912.txt
+      - 9 triggers detected in file
+      - Only : 9 events detected in file E:\Data\Fietsproef\RawData\pp_61\EBike\trial_000
+Start processing file: E:\Data\Fietsproef\RawData\pp_61\EBike\trial_002
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_61\EBike\trial_004
+      - Warning: only 0.94141 % of the data captured in sensor on KneeR in file E:\Data\Fietsproef\RawData\pp_61\EBike\trial_004-000_00341912.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_62\Classic\trial_000
+      - 13 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_62\Classic\trial_002
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_62\Classic\trial_004
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_62\EBike\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_62\EBike\trial_002
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_62\EBike\trial_004
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_63\Classic\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_63\Classic\trial_002
+      - Warning: only 0.94538 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_63\Classic\trial_002-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_63\Classic\trial_004
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_63\EBike\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_63\EBike\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_63\EBike\trial_004
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_64\Classic\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_64\Classic\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_64\Classic\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_64\EBike\trial_000
+      - 13 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_64\EBike\trial_002
+      - Warning: only 0.94775 % of the data captured in sensor on KneeR in file E:\Data\Fietsproef\RawData\pp_64\EBike\trial_002-000_00341912.txt
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_64\EBike\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_65\Classic\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_65\Classic\trial_002
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_65\Classic\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_65\EBike\trial_000
+      - Warning: only 0.93189 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_65\EBike\trial_000-000_00342392.txt
+      - 13 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_65\EBike\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_65\EBike\trial_004
+      - 13 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_66\Classic\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_66\Classic\trial_002
+      - Warning: only 0.93354 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_66\Classic\trial_002-000_00342392.txt
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_66\Classic\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_66\EBike\trial_000
+      - 13 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_66\EBike\trial_002
+      - 13 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_66\EBike\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_67\Classic\trial_000
+      - Warning: only 0.91277 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_67\Classic\trial_000-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_67\Classic\trial_002
+      - Warning: only 0.926 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_67\Classic\trial_002-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_67\Classic\trial_004
+      - Warning: only 0.94991 % of the data captured in sensor on KneeR in file E:\Data\Fietsproef\RawData\pp_67\Classic\trial_004-000_00341912.txt
+      - Warning: only 0.86148 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_67\Classic\trial_004-000_00342392.txt
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_67\EBike\trial_000
+      - Warning: only 0.92917 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_67\EBike\trial_000-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_67\EBike\trial_002
+      - Warning: only 0.93834 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_67\EBike\trial_002-000_00342392.txt
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_67\EBike\trial_004
+      - Warning: only 0.90831 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_67\EBike\trial_004-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_68\Classic\trial_000
+      - Warning: only 0.90344 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_68\Classic\trial_000-000_00342392.txt
+      - 13 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_68\Classic\trial_002
+      - Warning: only 0.92373 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_68\Classic\trial_002-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_68\Classic\trial_004
+      - Warning: only 0.92215 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_68\Classic\trial_004-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_68\EBike\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_68\EBike\trial_002
+      - Warning: only 0.90452 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_68\EBike\trial_002-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_68\EBike\trial_004
+      - Warning: only 0.92036 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_68\EBike\trial_004-000_00342392.txt
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_69\Classic\trial_000
+      - 14 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_69\Classic\trial_002
+      - Warning: only 0.93406 % of the data captured in sensor on KneeR in file E:\Data\Fietsproef\RawData\pp_69\Classic\trial_002-000_00341912.txt
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_69\Classic\trial_004
+      - Warning: only 0.93356 % of the data captured in sensor on KneeR in file E:\Data\Fietsproef\RawData\pp_69\Classic\trial_004-000_00341912.txt
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_69\EBike\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_69\EBike\trial_002
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_69\EBike\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_70\Classic\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_70\Classic\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_70\Classic\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_70\EBike\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_70\EBike\trial_002
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_70\EBike\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_71\Classic\trial_000
+      - Warning: only 0.88245 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_71\Classic\trial_000-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_71\Classic\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_71\Classic\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_71\EBike\trial_000
+      - Warning: only 0.91113 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_71\EBike\trial_000-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_71\EBike\trial_002
+      - Warning: only 0.94219 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_71\EBike\trial_002-000_00342392.txt
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_71\EBike\trial_004
+      - Warning: only 0.90735 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_71\EBike\trial_004-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_72\Classic\trial_000
+      - Warning: only 0.84958 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_72\Classic\trial_000-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_72\Classic\trial_002
+      - Warning: only 0.8273 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_72\Classic\trial_002-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_72\Classic\trial_004
+      - Warning: only 0.8599 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_72\Classic\trial_004-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_72\EBike\trial_000
+      - Warning: only 0.92729 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_72\EBike\trial_000-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_72\EBike\trial_002
+      - Warning: only 0.83929 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_72\EBike\trial_002-000_00342392.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_72\EBike\trial_004
+      - Warning: only 0.90987 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_72\EBike\trial_004-000_00342392.txt
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_73\Classic\trial_000
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_73\Classic\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_73\Classic\trial_004
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_73\EBike\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_73\EBike\trial_002
+      - Warning: only 0.94881 % of the data captured in sensor on KneeR in file E:\Data\Fietsproef\RawData\pp_73\EBike\trial_002-000_00341912.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_73\EBike\trial_004
+      - Warning: only 0.723 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_73\EBike\trial_004-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_74\Classic\trial_000
+      - 13 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_74\Classic\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_74\Classic\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_74\EBike\trial_000
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_74\EBike\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_74\EBike\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_75\Classic\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_75\Classic\trial_002
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_75\Classic\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_75\EBike\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_75\EBike\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_75\EBike\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_76\Classic\trial_000
+      - Warning: only 0.82757 % of the data captured in sensor on KneeL in file E:\Data\Fietsproef\RawData\pp_76\Classic\trial_000-000_00341911.txt
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_76\Classic\trial_002
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_76\Classic\trial_004
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_76\EBike\trial_000
+      - 14 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_76\EBike\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_76\EBike\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_77\Classic\trial_000
+      - Warning: only 0.92787 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_77\Classic\trial_000-000_00342392.txt
+      - 14 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_77\Classic\trial_002
+      - Warning: only 0.94062 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_77\Classic\trial_002-000_00342392.txt
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_77\Classic\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_77\EBike\trial_000
+      - 14 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_77\EBike\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_77\EBike\trial_004
+      - Warning: only 0.94476 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_77\EBike\trial_004-000_00342392.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_78\Classic\trial_000
+      - 13 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_78\Classic\trial_002
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_78\Classic\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_78\EBike\trial_000
+      - 13 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_78\EBike\trial_002
+      - Warning: only 0.93363 % of the data captured in sensor on Trunk in file E:\Data\Fietsproef\RawData\pp_78\EBike\trial_003-000_00B42D95.txt
+      - Warning: only 0.9486 % of the data captured in sensor on KneeR in file E:\Data\Fietsproef\RawData\pp_78\EBike\trial_002-000_00341912.txt
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_78\EBike\trial_004
+      - Warning: only 0.94626 % of the data captured in sensor on KneeL in file E:\Data\Fietsproef\RawData\pp_78\EBike\trial_004-000_00341911.txt
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_79\Classic\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_79\Classic\trial_002
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_79\Classic\trial_004
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_79\EBike\trial_000
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_79\EBike\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_79\EBike\trial_004
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_80\Classic\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_80\Classic\trial_002
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_80\Classic\trial_004
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_80\EBike\trial_000
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_80\EBike\trial_002
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_80\EBike\trial_004
+      - 10 triggers detected in file
+      - no callibration selected
+Start processing file: E:\Data\Fietsproef\RawData\pp_81\Classic\trial_000
+      - 13 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_81\Classic\trial_002
+      - Warning: only 0.85842 % of the data captured in sensor on KneeL in file E:\Data\Fietsproef\RawData\pp_81\Classic\trial_002-000_00341911.txt
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_81\Classic\trial_004
+      - 11 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_81\EBike\trial_000
+      - 14 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_81\EBike\trial_002
+      - 12 triggers detected in file
+Start processing file: E:\Data\Fietsproef\RawData\pp_81\EBike\trial_004
+      - 13 triggers detected in file
+Start batch processing
+03-Nov-2020
+                    [Data,tTrigger,header] = CombineRawData(Fpath,{f1,f2},StringLocation,OrderEvents);
+Start processing file: E:\Data\Fietsproef\RawData\pp_1\Classic\trial_000
+      - Warning: only 0.92252 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_1\Classic\trial_000-000_00342392.txt
+      - 21 triggers detected in file
+dbquit
+clc
+                    [Data,tTrigger,header] = CombineRawData(Fpath,{f1,f2},StringLocation,OrderEvents);
+Start processing file: E:\Data\Fietsproef\RawData\pp_1\Classic\trial_000
+      - Warning: only 0.92252 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_1\Classic\trial_000-000_00342392.txt
+<a href="matlab: opentoline('C:\Users\u0088756\Documents\Teaching\MasterThesis\Anouck_Theresa\Software\Functions\CombineRawData.m',177,1)">177 </a>    if ~isempty(tTrigger)
+if system_dependent('IsDebugMode')==1, dbstep; end
+<a href="matlab: opentoline('C:\Users\u0088756\Documents\Teaching\MasterThesis\Anouck_Theresa\Software\Functions\CombineRawData.m',178,1)">178 </a>        dt = diff(tTrigger);
+if system_dependent('IsDebugMode')==1, dbstep; end
+<a href="matlab: opentoline('C:\Users\u0088756\Documents\Teaching\MasterThesis\Anouck_Theresa\Software\Functions\CombineRawData.m',179,1)">179 </a>        tTreshold = 0.1; % minimum 100ms gap between triggers
+if system_dependent('IsDebugMode')==1, dbstep; end
+<a href="matlab: opentoline('C:\Users\u0088756\Documents\Teaching\MasterThesis\Anouck_Theresa\Software\Functions\CombineRawData.m',180,1)">180 </a>        while min(dt)<tTreshold
+if system_dependent('IsDebugMode')==1, dbstep; end
+<a href="matlab: opentoline('C:\Users\u0088756\Documents\Teaching\MasterThesis\Anouck_Theresa\Software\Functions\CombineRawData.m',181,1)">181 </a>            iError = dt < tTreshold;
+if system_dependent('IsDebugMode')==1, dbcont; end
+dbquit
+                    [Data,tTrigger,header] = CombineRawData(Fpath,{f1,f2},StringLocation,OrderEvents);
+Start processing file: E:\Data\Fietsproef\RawData\pp_1\Classic\trial_000
+      - Warning: only 0.92252 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_1\Classic\trial_000-000_00342392.txt
+<a href="matlab: opentoline('C:\Users\u0088756\Documents\Teaching\MasterThesis\Anouck_Theresa\Software\Functions\CombineRawData.m',180,1)">180 </a>        while min(dt)<tTreshold
+figure(); bar(tTrigger)
+if system_dependent('IsDebugMode')==1, dbquit all; end
+[Data,tTrigger,header] = CombineRawData(Fpath,{f1,f2},StringLocation,OrderEvents);
+Start processing file: E:\Data\Fietsproef\RawData\pp_1\Classic\trial_000
+      - Warning: only 0.92252 % of the data captured in sensor on Pelvis in file E:\Data\Fietsproef\RawData\pp_1\Classic\trial_000-000_00342392.txt
+<a href="matlab: opentoline('C:\Users\u0088756\Documents\Teaching\MasterThesis\Anouck_Theresa\Software\Functions\CombineRawData.m',187,1)">187 </a>        tTrigger = [0; tTrigger];
+dbquit
+clc
+Debug_Triggers
+1 - E:\Data\Fietsproef\MatData\pp_1\Classic\slow_data.mat
+2 - E:\Data\Fietsproef\MatData\pp_1\EBike\slow_data.mat
+3 - E:\Data\Fietsproef\MatData\pp_2\Classic\normal_data.mat
+4 - E:\Data\Fietsproef\MatData\pp_2\EBike\DualTask_data.mat
+5 - E:\Data\Fietsproef\MatData\pp_3\Classic\normal_data.mat
+6 - E:\Data\Fietsproef\MatData\pp_4\Classic\normal_data.mat
+7 - E:\Data\Fietsproef\MatData\pp_4\Classic\DualTask_data.mat
+8 - E:\Data\Fietsproef\MatData\pp_6\Classic\normal_data.mat
+9 - E:\Data\Fietsproef\MatData\pp_6\EBike\normal_data.mat
+10 - E:\Data\Fietsproef\MatData\pp_6\EBike\slow_data.mat
+11 - E:\Data\Fietsproef\MatData\pp_7\Classic\normal_data.mat
+12 - E:\Data\Fietsproef\MatData\pp_7\EBike\normal_data.mat
+13 - E:\Data\Fietsproef\MatData\pp_8\Classic\normal_data.mat
+14 - E:\Data\Fietsproef\MatData\pp_8\EBike\normal_data.mat
+15 - E:\Data\Fietsproef\MatData\pp_8\EBike\DualTask_data.mat
+16 - E:\Data\Fietsproef\MatData\pp_9\Classic\slow_data.mat
+17 - E:\Data\Fietsproef\MatData\pp_9\EBike\normal_data.mat
+18 - E:\Data\Fietsproef\MatData\pp_10\Classic\normal_data.mat
+19 - E:\Data\Fietsproef\MatData\pp_11\EBike\normal_data.mat
+20 - E:\Data\Fietsproef\MatData\pp_13\EBike\normal_data.mat
+21 - E:\Data\Fietsproef\MatData\pp_14\Classic\DualTask_data.mat
+22 - E:\Data\Fietsproef\MatData\pp_14\EBike\normal_data.mat
+23 - E:\Data\Fietsproef\MatData\pp_15\Classic\normal_data.mat
+24 - E:\Data\Fietsproef\MatData\pp_16\EBike\normal_data.mat
+25 - E:\Data\Fietsproef\MatData\pp_17\EBike\normal_data.mat
+26 - E:\Data\Fietsproef\MatData\pp_18\Classic\normal_data.mat
+27 - E:\Data\Fietsproef\MatData\pp_18\EBike\normal_data.mat
+28 - E:\Data\Fietsproef\MatData\pp_18\EBike\DualTask_data.mat
+29 - E:\Data\Fietsproef\MatData\pp_19\Classic\normal_data.mat
+30 - E:\Data\Fietsproef\MatData\pp_19\EBike\normal_data.mat
+31 - E:\Data\Fietsproef\MatData\pp_19\EBike\slow_data.mat
+32 - E:\Data\Fietsproef\MatData\pp_20\Classic\normal_data.mat
+33 - E:\Data\Fietsproef\MatData\pp_20\EBike\DualTask_data.mat
+34 - E:\Data\Fietsproef\MatData\pp_21\Classic\normal_data.mat
+35 - E:\Data\Fietsproef\MatData\pp_21\EBike\normal_data.mat
+36 - E:\Data\Fietsproef\MatData\pp_21\EBike\DualTask_data.mat
+37 - E:\Data\Fietsproef\MatData\pp_22\Classic\normal_data.mat
+38 - E:\Data\Fietsproef\MatData\pp_22\Classic\DualTask_data.mat
+39 - E:\Data\Fietsproef\MatData\pp_22\EBike\normal_data.mat
+40 - E:\Data\Fietsproef\MatData\pp_23\EBike\normal_data.mat
+41 - E:\Data\Fietsproef\MatData\pp_24\Classic\DualTask_data.mat
+42 - E:\Data\Fietsproef\MatData\pp_24\EBike\normal_data.mat
+43 - E:\Data\Fietsproef\MatData\pp_24\EBike\slow_data.mat
+44 - E:\Data\Fietsproef\MatData\pp_25\Classic\slow_data.mat
+45 - E:\Data\Fietsproef\MatData\pp_25\EBike\normal_data.mat
+46 - E:\Data\Fietsproef\MatData\pp_26\Classic\normal_data.mat
+47 - E:\Data\Fietsproef\MatData\pp_26\EBike\normal_data.mat
+48 - E:\Data\Fietsproef\MatData\pp_27\Classic\slow_data.mat
+49 - E:\Data\Fietsproef\MatData\pp_28\Classic\normal_data.mat
+50 - E:\Data\Fietsproef\MatData\pp_28\EBike\normal_data.mat
+51 - E:\Data\Fietsproef\MatData\pp_29\Classic\normal_data.mat
+52 - E:\Data\Fietsproef\MatData\pp_29\EBike\normal_data.mat
+53 - E:\Data\Fietsproef\MatData\pp_30\Classic\normal_data.mat
+54 - E:\Data\Fietsproef\MatData\pp_30\EBike\normal_data.mat
+55 - E:\Data\Fietsproef\MatData\pp_31\EBike\normal_data.mat
+56 - E:\Data\Fietsproef\MatData\pp_32\Classic\normal_data.mat
+57 - E:\Data\Fietsproef\MatData\pp_32\Classic\slow_data.mat
+58 - E:\Data\Fietsproef\MatData\pp_32\EBike\normal_data.mat
+59 - E:\Data\Fietsproef\MatData\pp_33\Classic\normal_data.mat
+60 - E:\Data\Fietsproef\MatData\pp_33\Classic\DualTask_data.mat
+61 - E:\Data\Fietsproef\MatData\pp_33\EBike\slow_data.mat
+62 - E:\Data\Fietsproef\MatData\pp_34\Classic\slow_data.mat
+63 - E:\Data\Fietsproef\MatData\pp_34\EBike\normal_data.mat
+64 - E:\Data\Fietsproef\MatData\pp_35\Classic\slow_data.mat
+65 - E:\Data\Fietsproef\MatData\pp_35\Classic\DualTask_data.mat
+66 - E:\Data\Fietsproef\MatData\pp_35\EBike\normal_data.mat
+67 - E:\Data\Fietsproef\MatData\pp_36\EBike\normal_data.mat
+68 - E:\Data\Fietsproef\MatData\pp_37\Classic\normal_data.mat
+69 - E:\Data\Fietsproef\MatData\pp_37\EBike\normal_data.mat
+70 - E:\Data\Fietsproef\MatData\pp_38\Classic\normal_data.mat
+71 - E:\Data\Fietsproef\MatData\pp_38\Classic\slow_data.mat
+72 - E:\Data\Fietsproef\MatData\pp_38\EBike\normal_data.mat
+73 - E:\Data\Fietsproef\MatData\pp_39\Classic\slow_data.mat
+74 - E:\Data\Fietsproef\MatData\pp_39\EBike\normal_data.mat
+75 - E:\Data\Fietsproef\MatData\pp_40\Classic\normal_data.mat
+76 - E:\Data\Fietsproef\MatData\pp_40\EBike\normal_data.mat
+77 - E:\Data\Fietsproef\MatData\pp_40\EBike\slow_data.mat
+78 - E:\Data\Fietsproef\MatData\pp_42\Classic\normal_data.mat
+79 - E:\Data\Fietsproef\MatData\pp_43\EBike\slow_data.mat
+80 - E:\Data\Fietsproef\MatData\pp_44\Classic\normal_data.mat
+81 - E:\Data\Fietsproef\MatData\pp_44\EBike\normal_data.mat
+82 - E:\Data\Fietsproef\MatData\pp_44\EBike\slow_data.mat
+83 - E:\Data\Fietsproef\MatData\pp_45\Classic\normal_data.mat
+84 - E:\Data\Fietsproef\MatData\pp_45\Classic\DualTask_data.mat
+85 - E:\Data\Fietsproef\MatData\pp_45\EBike\normal_data.mat
+86 - E:\Data\Fietsproef\MatData\pp_45\EBike\slow_data.mat
+87 - E:\Data\Fietsproef\MatData\pp_46\Classic\normal_data.mat
+88 - E:\Data\Fietsproef\MatData\pp_47\Classic\normal_data.mat
+89 - E:\Data\Fietsproef\MatData\pp_47\EBike\normal_data.mat
+90 - E:\Data\Fietsproef\MatData\pp_47\EBike\DualTask_data.mat
+91 - E:\Data\Fietsproef\MatData\pp_48\Classic\normal_data.mat
+92 - E:\Data\Fietsproef\MatData\pp_48\EBike\normal_data.mat
+93 - E:\Data\Fietsproef\MatData\pp_49\EBike\normal_data.mat
+94 - E:\Data\Fietsproef\MatData\pp_50\Classic\normal_data.mat
+95 - E:\Data\Fietsproef\MatData\pp_50\EBike\normal_data.mat
+96 - E:\Data\Fietsproef\MatData\pp_51\Classic\normal_data.mat
+97 - E:\Data\Fietsproef\MatData\pp_51\EBike\normal_data.mat
+98 - E:\Data\Fietsproef\MatData\pp_52\Classic\normal_data.mat
+99 - E:\Data\Fietsproef\MatData\pp_52\EBike\normal_data.mat
+100 - E:\Data\Fietsproef\MatData\pp_53\Classic\normal_data.mat
+101 - E:\Data\Fietsproef\MatData\pp_53\EBike\normal_data.mat
+102 - E:\Data\Fietsproef\MatData\pp_54\Classic\normal_data.mat
+103 - E:\Data\Fietsproef\MatData\pp_54\Classic\DualTask_data.mat
+104 - E:\Data\Fietsproef\MatData\pp_54\EBike\normal_data.mat
+105 - E:\Data\Fietsproef\MatData\pp_55\Classic\normal_data.mat
+106 - E:\Data\Fietsproef\MatData\pp_55\EBike\normal_data.mat
+107 - E:\Data\Fietsproef\MatData\pp_55\EBike\slow_data.mat
+108 - E:\Data\Fietsproef\MatData\pp_55\EBike\DualTask_data.mat
+109 - E:\Data\Fietsproef\MatData\pp_56\Classic\normal_data.mat
+110 - E:\Data\Fietsproef\MatData\pp_56\EBike\normal_data.mat
+111 - E:\Data\Fietsproef\MatData\pp_57\Classic\normal_data.mat
+112 - E:\Data\Fietsproef\MatData\pp_57\Classic\DualTask_data.mat
+113 - E:\Data\Fietsproef\MatData\pp_57\EBike\normal_data.mat
+114 - E:\Data\Fietsproef\MatData\pp_58\Classic\normal_data.mat
+115 - E:\Data\Fietsproef\MatData\pp_58\EBike\normal_data.mat
+116 - E:\Data\Fietsproef\MatData\pp_59\Classic\normal_data.mat
+117 - E:\Data\Fietsproef\MatData\pp_59\EBike\normal_data.mat
+118 - E:\Data\Fietsproef\MatData\pp_60\EBike\normal_data.mat
+119 - E:\Data\Fietsproef\MatData\pp_60\EBike\DualTask_data.mat
+120 - E:\Data\Fietsproef\MatData\pp_61\Classic\normal_data.mat
+121 - E:\Data\Fietsproef\MatData\pp_61\EBike\slow_data.mat
+122 - E:\Data\Fietsproef\MatData\pp_62\Classic\DualTask_data.mat
+123 - E:\Data\Fietsproef\MatData\pp_62\EBike\normal_data.mat
+124 - E:\Data\Fietsproef\MatData\pp_63\Classic\normal_data.mat
+125 - E:\Data\Fietsproef\MatData\pp_63\Classic\DualTask_data.mat
+126 - E:\Data\Fietsproef\MatData\pp_63\EBike\normal_data.mat
+127 - E:\Data\Fietsproef\MatData\pp_64\Classic\normal_data.mat
+128 - E:\Data\Fietsproef\MatData\pp_65\Classic\normal_data.mat
+129 - E:\Data\Fietsproef\MatData\pp_65\Classic\slow_data.mat
+130 - E:\Data\Fietsproef\MatData\pp_66\Classic\normal_data.mat
+131 - E:\Data\Fietsproef\MatData\pp_67\Classic\normal_data.mat
+132 - E:\Data\Fietsproef\MatData\pp_67\Classic\slow_data.mat
+133 - E:\Data\Fietsproef\MatData\pp_67\EBike\DualTask_data.mat
+134 - E:\Data\Fietsproef\MatData\pp_68\Classic\DualTask_data.mat
+135 - E:\Data\Fietsproef\MatData\pp_68\EBike\normal_data.mat
+136 - E:\Data\Fietsproef\MatData\pp_69\EBike\normal_data.mat
+137 - E:\Data\Fietsproef\MatData\pp_69\EBike\slow_data.mat
+138 - E:\Data\Fietsproef\MatData\pp_70\Classic\normal_data.mat
+139 - E:\Data\Fietsproef\MatData\pp_70\EBike\normal_data.mat
+140 - E:\Data\Fietsproef\MatData\pp_70\EBike\slow_data.mat
+141 - E:\Data\Fietsproef\MatData\pp_71\Classic\normal_data.mat
+142 - E:\Data\Fietsproef\MatData\pp_71\EBike\normal_data.mat
+143 - E:\Data\Fietsproef\MatData\pp_72\EBike\normal_data.mat
+144 - E:\Data\Fietsproef\MatData\pp_72\EBike\slow_data.mat
+145 - E:\Data\Fietsproef\MatData\pp_73\EBike\normal_data.mat
+146 - E:\Data\Fietsproef\MatData\pp_75\Classic\normal_data.mat
+147 - E:\Data\Fietsproef\MatData\pp_75\EBike\normal_data.mat
+148 - E:\Data\Fietsproef\MatData\pp_76\Classic\normal_data.mat
+149 - E:\Data\Fietsproef\MatData\pp_76\Classic\slow_data.mat
+150 - E:\Data\Fietsproef\MatData\pp_76\Classic\DualTask_data.mat
+151 - E:\Data\Fietsproef\MatData\pp_78\Classic\slow_data.mat
+152 - E:\Data\Fietsproef\MatData\pp_79\Classic\normal_data.mat
+153 - E:\Data\Fietsproef\MatData\pp_79\Classic\slow_data.mat
+154 - E:\Data\Fietsproef\MatData\pp_79\EBike\DualTask_data.mat
+155 - E:\Data\Fietsproef\MatData\pp_80\Classic\normal_data.mat
+156 - E:\Data\Fietsproef\MatData\pp_80\EBike\normal_data.mat
+157 - E:\Data\Fietsproef\MatData\pp_80\EBike\slow_data.mat
+158 - E:\Data\Fietsproef\MatData\pp_81\EBike\slow_data.mat
+OrderEvents     = {'Call-person','Call-bike','small','slalom','obstacles','FullTurn','Walk','DualTask','onehand','AfterDrop','brake','add1','add2'};
+
+% 0 (call-person) 1 (call bike 2 (small) 3 (slalom) 4  (obstacle) 5 (fullturn) 
+% 6 (walk) 7 (shoulder) 8 (onehand) 9 (afterdrop) 10 (brake) 11
+nPlot = 30;
+iSel = find(FileInfo(:,4) == 12);
+for i =1:nPlot    
+    datapath = PathInfo{iSel(i)};
+    load(datapath);
+    PlotDetailedFrame(Data,tTrigger,OrderEvents);
+    set(gcf,'Position',[143         594        1188         499]);
+end
+get(gcf,'Position')
+
+ans =
+
+         294         158        1211         724
+
+close all
+clc
+iStart = find(strcmp(OrderEvents,'FullTurn'));
+iStart
+
+iStart =
+
+     6
+
+iSel = find(FileInfo(:,4) == 12);
+i = 4;
+datapath = PathInfo{iSel(i)};
+load(datapath);
+
+% select data during full turn
+iStart = find(strcmp(OrderEvents,'FullTurn'));
+
+% compute average angle frame in each phase
+qdFrame = Data.Frame.QdWorld;
+t = Data.Frame.t;
+qdVect =nan(length(tTriggers)-1,1);
+{Unrecognized function or variable 'tTriggers'.
+} 
+iSel = find(FileInfo(:,4) == 12);
+i = 4;
+datapath = PathInfo{iSel(i)};
+load(datapath);
+
+% select data during full turn
+iStart = find(strcmp(OrderEvents,'FullTurn'));
+
+% compute average angle frame in each phase
+qdFrame = Data.Frame.QdWorld;
+t = Data.Frame.t;
+qdVect =nan(length(tTriggers)-1,1);
+{Unrecognized function or variable 'tTriggers'.
+} 
+iSel = find(FileInfo(:,4) == 12);
+i = 4;
+datapath = PathInfo{iSel(i)};
+load(datapath);
+
+% select data during full turn
+iStart = find(strcmp(OrderEvents,'FullTurn'));
+
+% compute average angle frame in each phase
+qdFrame = Data.Frame.QdWorld;
+t = Data.Frame.t;
+qdVect =nan(length(tTrigger)-1,1);
+for i =1:length(tTriggers)-1
+    iSel = t<=tTriggers(i+1) & t>=tTrigger(i);
+    qdVect(i) = nanmean(qdFrame(iSel));
+end
+{Unrecognized function or variable 'tTriggers'.
+} 
+iSel = find(FileInfo(:,4) == 12);
+i = 4;
+datapath = PathInfo{iSel(i)};
+load(datapath);
+
+% select data during full turn
+iStart = find(strcmp(OrderEvents,'FullTurn'));
+
+% compute average angle frame in each phase
+qdFrame = Data.Frame.QdWorld;
+t = Data.Frame.t;
+qdVect =nan(length(tTrigger)-1,1);
+for i =1:length(tTriggers)-1
+    iSel = t<=tTrigger(i+1) & t>=tTrigger(i);
+    qdVect(i) = nanmean(qdFrame(iSel));
+end
+{Unrecognized function or variable 'tTriggers'.
+} 
+
+iSel = find(FileInfo(:,4) == 12);
+i = 4;
+datapath = PathInfo{iSel(i)};
+load(datapath);
+
+% select data during full turn
+iStart = find(strcmp(OrderEvents,'FullTurn'));
+
+% compute average angle frame in each phase
+qdFrame = Data.Frame.QdWorld;
+t = Data.Frame.t;
+qdVect =nan(length(tTrigger)-1,1);
+for i =1:length(tTrigger)-1
+    iSel = t<=tTrigger(i+1) & t>=tTrigger(i);
+    qdVect(i) = nanmean(qdFrame(iSel));
+end
+qdVect
+
+qdVect =
+
+   -0.0148
+    0.0072
+    0.0172
+   -0.0016
+    0.0028
+   -0.0104
+   -0.0019
+    0.0034
+   -0.0012
+    0.0044
+   -0.0080
+
+
+iSel = find(FileInfo(:,4) == 12);
+i = 4;
+datapath = PathInfo{iSel(i)};
+load(datapath);
+
+% select data during full turn
+iStart = find(strcmp(OrderEvents,'FullTurn'));
+
+% compute average angle frame in each phase
+qdFrame = Data.Frame.QdWorld(:,3);
+t = Data.Frame.t;
+qdVect =nan(length(tTrigger)-1,1);
+for i =1:length(tTrigger)-1
+    iSel = t<=tTrigger(i+1) & t>=tTrigger(i);
+    qdVect(i) = nanmean(qdFrame(iSel));
+end
+qdVect
+
+qdVect =
+
+    0.0006
+   -0.1410
+    0.1035
+    0.0131
+    0.5097
+   -0.1949
+   -0.0023
+    0.1137
+   -0.0114
+   -0.2662
+    0.0964
+
+[qMax,iMax] = max(qdVect);
+iMax
+
+iMax =
+
+     5
+
+iStart
+
+iStart =
+
+     6
+
+Unrecognized function or variable 'iTurn'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('DetectEvents_FullTurnBased', 'C:\Users\u0088756\Documents\Teaching\MasterThesis\Anouck_Theresa\Software\Functions\DetectEvents_FullTurnBased.m', 16)" style="font-weight:bold">DetectEvents_FullTurnBased</a> (<a href="matlab: opentoline('C:\Users\u0088756\Documents\Teaching\MasterThesis\Anouck_Theresa\Software\Functions\DetectEvents_FullTurnBased.m',16,0)">line 16</a>)
+    if iMax ~= iTurn
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Debug_Triggers', 'C:\Users\u0088756\Documents\Teaching\MasterThesis\Anouck_Theresa\Software\DebugData\Debug_Triggers.m', 88)" style="font-weight:bold">Debug_Triggers</a> (<a href="matlab: opentoline('C:\Users\u0088756\Documents\Teaching\MasterThesis\Anouck_Theresa\Software\DebugData\Debug_Triggers.m',88,0)">line 88</a>)
+    [ordEvents,BoolError] = DetectEvents_FullTurnBased(Data,tTrigger);
+
+opentoline('C:\Users\u0088756\Documents\Teaching\MasterThesis\Anouck_Theresa\Software\Functions\DetectEvents_FullTurnBased.m',16,0)
+Full turn should be one phase later, removed first callibration phase
+Full turn should be one phase later, removed first callibration phase
+Full turn should be one phase later, removed first callibration phase
+Full turn should be one phase later, removed first callibration phase
+Full turn should be one phase later, removed first callibration phase
+Full turn should be one phase later, removed first callibration phase
+close all
+clc
+Full turn should be one phase later, removed first callibration phase
+Full turn should be one phase later, removed first callibration phase
+Full turn should be one phase later, removed first callibration phase
+Full turn should be one phase later, removed first callibration phase
+Full turn should be one phase later, removed first callibration phase
+Full turn should be one phase later, removed first callibration phase
+Full turn should be one phase later, removed first callibration phase
+Full turn should be one phase later, removed first callibration phase
+Full turn should be one phase later, removed first callibration phase
+Full turn should be one phase later, removed first callibration phase
+Full turn should be one phase later, removed first callibration phase
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('LiveEditorEvaluationHelperESectionEval7f7e5cef', 'C:\Users\u0088756\AppData\Local\Temp\Editor_vxdxq\LiveEditorEvaluationHelperESectionEval7f7e5cef.mlx', 87)" style="font-weight:bold">LiveEditorEvaluationHelperESectionEval7f7e5cef</a> (<a href="matlab: opentoline('C:\Users\u0088756\AppData\Local\Temp\Editor_vxdxq\LiveEditorEvaluationHelperESectionEval7f7e5cef.mlx',87,0)">line 87</a>)
+
+
+In matlab.internal.editor.evaluateCode
+} 
+i
+
+i =
+
+    44
+
+length(iSel)
+
+ans =
+
+   158
+
+Full turn should be one phase later, removed first callibration phase
+Full turn should be one phase later, removed first callibration phase
+Full turn should be one phase later, removed first callibration phase
+Full turn should be one phase later, removed first callibration phase
+Full turn should be one phase later, removed first callibration phase
+Full turn should be one phase later, removed first callibration phase
+close all
+clc
+Full turn should be one phase later, removed first callibration phase
+Full turn should be one phase later, removed first callibration phase
+Full turn should be one phase later, removed first callibration phase
+Full turn should be one phase later, removed first callibration phase
+Full turn should be one phase later, removed first callibration phase
+Full turn should be one phase later, removed first callibration phase
+Full turn should be one phase later, removed first callibration phase
+Full turn should be one phase later, removed first callibration phase
+Unkown problem
+Full turn should be one phase later, removed first callibration phase
+Full turn should be one phase later, removed first callibration phase
+Full turn should be one phase later, removed first callibration phase
+Full turn should be one phase later, removed first callibration phase
+Full turn should be one phase later, removed first callibration phase
+Unkown problem
+Full turn should be one phase later, removed first callibration phase
+4
+Full turn should be one phase later, removed first callibration phase
+7
+Full turn should be one phase later, removed first callibration phase
+10
+Full turn should be one phase later, removed first callibration phase
+12
+Full turn should be one phase later, removed first callibration phase
+21
+Full turn should be one phase later, removed first callibration phase
+28
+Full turn should be one phase later, removed first callibration phase
+31
+Full turn should be one phase later, removed first callibration phase
+33
+Unkown problem
+36
+Full turn should be one phase later, removed first callibration phase
+38
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('LiveEditorEvaluationHelperESectionEval7f7e5cef', 'C:\Users\u0088756\AppData\Local\Temp\Editor_vxdxq\LiveEditorEvaluationHelperESectionEval7f7e5cef.mlx', 87)" style="font-weight:bold">LiveEditorEvaluationHelperESectionEval7f7e5cef</a> (<a href="matlab: opentoline('C:\Users\u0088756\AppData\Local\Temp\Editor_vxdxq\LiveEditorEvaluationHelperESectionEval7f7e5cef.mlx',87,0)">line 87</a>)
+
+
+In matlab.internal.editor.evaluateCode
+} 
+iSel = find(FileInfo(:,4) == 12);
+i = 36;
+datapath = PathInfo{iSel(i)};
+load(datapath);
+
+% select data during full turn
+iTurn = find(strcmp(OrderEvents,'FullTurn'));
+
+% compute average angle of the frame in each phase
+qdFrame = Data.Frame.QdWorld(:,3);
+t = Data.Frame.t;
+qdVect =nan(length(tTrigger)-1,1);
+for i =1:length(tTrigger)-1
+    iSel = t<=tTrigger(i+1) & t>=tTrigger(i);
+    qdVect(i) = nanmean(qdFrame(iSel));
+end
+[qMax,iMax] = max(qdVect);
+iMax
+
+iMax =
+
+     4
+
+qMax
+
+qMax =
+
+    0.6425
+
+qdVect
+
+qdVect =
+
+    0.0072
+   -0.1703
+   -0.0052
+    0.6425
+   -0.0106
+    0.6138
+   -0.3215
+    0.1638
+    0.0164
+   -0.3770
+   -0.0152
+
+PlotDetailedFrame(Data,tTrigger,ordEvents);
+iSel(36)
+
+ans =
+
+  <a href="matlab:helpPopup logical" style="font-weight:bold">logical</a>
+
+   0
+
+iSel(i)
+
+ans =
+
+  <a href="matlab:helpPopup logical" style="font-weight:bold">logical</a>
+
+   0
+
+i
+
+i =
+
+    11
+
+i=36
+
+i =
+
+    36
+
+iSel(i)
+
+ans =
+
+  <a href="matlab:helpPopup logical" style="font-weight:bold">logical</a>
+
+   0
+
+iSel = find(FileInfo(:,4) == 12);
+i = 36;
+datapath = PathInfo{iSel(i)};
+datpath
+{Unrecognized function or variable 'datpath'.
+} 
+datapath
+
+datapath =
+
+    'E:\Data\Fietsproef\MatData\pp_21\EBike\DualTask_data.mat'
+
+D
+{Unrecognized function or variable 'D'.
+} 
+D = load(datapath);
+D
+
+D = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+        Data: [1×1 struct]
+      header: {1×54 cell}
+    tTrigger: [12×1 double]
+
+CleanUp_TriggerPulses
+s
+
+s =
+
+     1
+
+i
+
+i =
+
+     2
+
+nExpect
+
+nExpect =
+
+    12
+
+length(tTrigger)
+
+ans =
+
+    12
+
+i
+
+i =
+
+     2
+
+f
+
+f =
+
+     1
+
+if system_dependent('IsDebugMode')==1, dbquit all; end
+CleanUp_TriggerPulses
+if system_dependent('IsDebugMode')==1, dbcont; end
+test
+if system_dependent('IsDebugMode')==1, dbcont; end
+test
+s
+
+s =
+
+     2
+
+i
+
+i =
+
+     1
+
+f
+
+f =
+
+     1
+
+if system_dependent('IsDebugMode')==1, dbcont; end
+test
+if system_dependent('IsDebugMode')==1, dbquit all; end
+clc
+CleanUp_TriggerPulses
+s
+
+s =
+
+     6
+
+f
+
+f =
+
+     1
+
+i
+
+i =
+
+     1
+
+OutPathMat
+
+OutPathMat =
+
+    'E:\Data\Fietsproef\MatData\pp_6\Classic'
+
+filename
+
+filename =
+
+    'E:\Data\Fietsproef\MatData\pp_6\Classic\normal_data.mat'
+
+if system_dependent('IsDebugMode')==1, dbquit all; end
+CleanUp_TriggerPulses
+if system_dependent('IsDebugMode')==1, dbquit all; end
+CleanUp_TriggerPulses
+if system_dependent('IsDebugMode')==1, dbcont; end
+test
+if system_dependent('IsDebugMode')==1, dbcont; end
+test
+<a href="matlab: opentoline('C:\Users\u0088756\Documents\Teaching\MasterThesis\Anouck_Theresa\Software\Examples\CleanUp_TriggerPulses.m',59,1)">59  </a>                    disp('test');
+if system_dependent('IsDebugMode')==1, dbcont; end
+test
+<a href="matlab: opentoline('C:\Users\u0088756\Documents\Teaching\MasterThesis\Anouck_Theresa\Software\Examples\CleanUp_TriggerPulses.m',59,1)">59  </a>                    disp('test');
+if system_dependent('IsDebugMode')==1, dbcont; end
+test
+<a href="matlab: opentoline('C:\Users\u0088756\Documents\Teaching\MasterThesis\Anouck_Theresa\Software\Examples\CleanUp_TriggerPulses.m',59,1)">59  </a>                    disp('test');
+dbquit
+clc
+close all
+clc
+CleanUp_TriggerPulses
+if system_dependent('IsDebugMode')==1, dbcont; end
+test
+if system_dependent('IsDebugMode')==1, dbcont; end
+test
+<a href="matlab: opentoline('C:\Users\u0088756\Documents\Teaching\MasterThesis\Anouck_Theresa\Software\Examples\CleanUp_TriggerPulses.m',59,1)">59  </a>                    disp('test');
+if system_dependent('IsDebugMode')==1, dbcont; end
+test
+if system_dependent('IsDebugMode')==1, dbcont; end
+test
+if system_dependent('IsDebugMode')==1, dbcont; end
+test
+<a href="matlab: opentoline('C:\Users\u0088756\Documents\Teaching\MasterThesis\Anouck_Theresa\Software\Examples\CleanUp_TriggerPulses.m',59,1)">59  </a>                    disp('test');
+if system_dependent('IsDebugMode')==1, dbcont; end
+test
+<a href="matlab: opentoline('C:\Users\u0088756\Documents\Teaching\MasterThesis\Anouck_Theresa\Software\Examples\CleanUp_TriggerPulses.m',59,1)">59  </a>                    disp('test');
+dbquit
+clc
+ExampleBatch2
+Start batch processing
+03-Nov-2020
+dbquit
+clc
+ExampleBatch2
+Start batch processing
+03-Nov-2020
+OutName
+
+OutName =
+
+    'normal_data.mat'
+
+filename
+
+filename =
+
+  1×2 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+
+    {'trial_000.mtb'}    {'trial_001.mtb'}
+
+if system_dependent('IsDebugMode')==1, dbstep; end
+Start processing file: E:\Data\Fietsproef\RawData\pp_10\Classic\trial_000
+      - 12 triggers detected in file
+      - no callibration selected
+PlotDetailedSteer(Data,tTrigger)
+{Not enough input arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('PlotDetailedSteer', 'C:\Users\u0088756\Documents\Teaching\MasterThesis\Anouck_Theresa\Software\Functions\PlotDetailedSteer.m', 15)" style="font-weight:bold">PlotDetailedSteer</a> (<a href="matlab: opentoline('C:\Users\u0088756\Documents\Teaching\MasterThesis\Anouck_Theresa\Software\Functions\PlotDetailedSteer.m',15,0)">line 15</a>)
+   text(x,y,PhaseNames{i});
+} 
+PlotDetailedSteer(Data,tTrigger,OrderEvents))
+ PlotDetailedSteer(Data,tTrigger,OrderEvents))
+                                             ↑
+{Error: Invalid expression. When calling a function or indexing a variable, use parentheses. Otherwise, check for mismatched delimiters.
+} 
+OrderEvents     = {'Call1','small','slalom','obstacles','FullTurn','Walk','DualTask','onehand','AfterDrop','brake','temp','temp','temp'};
+PlotDetailedSteer(Data,tTrigger,OrderEvents)
+PlotDetailedFrame(Data,tTrigger,OrderEvents)
+if system_dependent('IsDebugMode')==1, dbquit all; end
+CleanUp_TriggerPulses
+BoolError
+
+BoolError =
+
+  <a href="matlab:helpPopup logical" style="font-weight:bold">logical</a>
+
+   1
+
+nTrigger
+
+nTrigger =
+
+    12
+
+i
+
+i =
+
+     1
+
+nExpect
+
+nExpect =
+
+    12
+
+if system_dependent('IsDebugMode')==1, dbquit all; end
+CleanUp_TriggerPulses
+if system_dependent('IsDebugMode')==1, dbquit all; end
+CleanUp_TriggerPulses
+E:\Data\Fietsproef\MatData\pp_10\Classic
+if system_dependent('IsDebugMode')==1, dbquit all; end
+CleanUp_TriggerPulses
+E:\Data\Fietsproef\MatData\pp_10\Classic\slow_data.mat
+i
+
+i =
+
+     2
+
+j
+
+j =
+
+    12
+
+f
+
+f =
+
+     1
+
+i
+
+i =
+
+     2
+
+if system_dependent('IsDebugMode')==1, dbcont; end
+test
+E:\Data\Fietsproef\MatData\pp_10\Classic\DualTask_data.mat
+dbquit
+clc
+CleanUp_TriggerPulses
+E:\Data\Fietsproef\MatData\pp_10\Classic\slow_data.mat
+if system_dependent('IsDebugMode')==1, dbcont; end
+test
+E:\Data\Fietsproef\MatData\pp_10\Classic\DualTask_data.mat
+if system_dependent('IsDebugMode')==1, dbcont; end
+test
+E:\Data\Fietsproef\MatData\pp_10\EBike\slow_data.mat
+if system_dependent('IsDebugMode')==1, dbcont; end
+test
+E:\Data\Fietsproef\MatData\pp_10\EBike\DualTask_data.mat
+if system_dependent('IsDebugMode')==1, dbcont; end
+test
+E:\Data\Fietsproef\MatData\pp_11\Classic\slow_data.mat
+if system_dependent('IsDebugMode')==1, dbcont; end
+test
+E:\Data\Fietsproef\MatData\pp_11\Classic\DualTask_data.mat
+if system_dependent('IsDebugMode')==1, dbcont; end
+test
+E:\Data\Fietsproef\MatData\pp_11\EBike\slow_data.mat
+if system_dependent('IsDebugMode')==1, dbcont; end
+test
+E:\Data\Fietsproef\MatData\pp_11\EBike\DualTask_data.mat
+if system_dependent('IsDebugMode')==1, dbcont; end
+test
+E:\Data\Fietsproef\MatData\pp_12\Classic\slow_data.mat
+if system_dependent('IsDebugMode')==1, dbcont; end
+test
+E:\Data\Fietsproef\MatData\pp_12\Classic\DualTask_data.mat
+if system_dependent('IsDebugMode')==1, dbcont; end
+test
+E:\Data\Fietsproef\MatData\pp_12\EBike\slow_data.mat
+if system_dependent('IsDebugMode')==1, dbcont; end
+test
+E:\Data\Fietsproef\MatData\pp_12\EBike\DualTask_data.mat
+if system_dependent('IsDebugMode')==1, dbcont; end
+test
+E:\Data\Fietsproef\MatData\pp_13\Classic\slow_data.mat
+if system_dependent('IsDebugMode')==1, dbcont; end
+test
+E:\Data\Fietsproef\MatData\pp_13\Classic\DualTask_data.mat
+if system_dependent('IsDebugMode')==1, dbcont; end
+test
+E:\Data\Fietsproef\MatData\pp_13\EBike\slow_data.mat
+dbquit
+clc
+ExampleBatch2
+Start batch processing
+03-Nov-2020
+
+filename =
+
+  1×2 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+
+    {'trial_000.mtb'}    {'trial_001.mtb'}
+
+if system_dependent('IsDebugMode')==1, dbcont; end
+Start processing file: E:\Data\Fietsproef\RawData\pp_10\Classic\trial_000
+      - 12 triggers detected in file
+      - no callibration selected
+
+filename =
+
+  1×2 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+
+    {'trial_002.mtb'}    {'trial_003.mtb'}
+
+if system_dependent('IsDebugMode')==1, dbcont; end
+Start processing file: E:\Data\Fietsproef\RawData\pp_10\Classic\trial_002
+      - 10 triggers detected in file
+      - no callibration selected
+      - Only : 10 events detected in file E:\Data\Fietsproef\RawData\pp_10\Classic\trial_002
+
+filename =
+
+  1×2 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+
+    {'trial_004.mtb'}    {'trial_005.mtb'}
+
+f1
+
+f1 =
+
+    'trial_004'
+
+f2
+
+f2 =
+
+    'trial_005'
+
+if system_dependent('IsDebugMode')==1, dbquit all; end
+CleanUp_TriggerPulses
+E:\Data\Fietsproef\MatData\pp_10\Classic\slow_data.mat
+if system_dependent('IsDebugMode')==1, dbcont; end
+test
+E:\Data\Fietsproef\MatData\pp_10\Classic\DualTask_data.mat
+if system_dependent('IsDebugMode')==1, dbcont; end
+test
+E:\Data\Fietsproef\MatData\pp_10\EBike\normal_data.mat
+if system_dependent('IsDebugMode')==1, dbcont; end
+test
+E:\Data\Fietsproef\MatData\pp_11\Classic\normal_data.mat
+<a href="matlab: opentoline('C:\Users\u0088756\Documents\Teaching\MasterThesis\Anouck_Theresa\Software\Examples\CleanUp_TriggerPulses.m',60,1)">60  </a>                    disp('test');
+if system_dependent('IsDebugMode')==1, dbcont; end
+test
+E:\Data\Fietsproef\MatData\pp_11\Classic\slow_data.mat
+<a href="matlab: opentoline('C:\Users\u0088756\Documents\Teaching\MasterThesis\Anouck_Theresa\Software\Examples\CleanUp_TriggerPulses.m',60,1)">60  </a>                    disp('test');
+if system_dependent('IsDebugMode')==1, dbcont; end
+test
+E:\Data\Fietsproef\MatData\pp_12\Classic\normal_data.mat
+<a href="matlab: opentoline('C:\Users\u0088756\Documents\Teaching\MasterThesis\Anouck_Theresa\Software\Examples\CleanUp_TriggerPulses.m',60,1)">60  </a>                    disp('test');
+if system_dependent('IsDebugMode')==1, dbcont; end
+test
+E:\Data\Fietsproef\MatData\pp_12\EBike\normal_data.mat
+<a href="matlab: opentoline('C:\Users\u0088756\Documents\Teaching\MasterThesis\Anouck_Theresa\Software\Examples\CleanUp_TriggerPulses.m',60,1)">60  </a>                    disp('test');
+if system_dependent('IsDebugMode')==1, dbcont; end
+test
+E:\Data\Fietsproef\MatData\pp_13\Classic\normal_data.mat
+<a href="matlab: opentoline('C:\Users\u0088756\Documents\Teaching\MasterThesis\Anouck_Theresa\Software\Examples\CleanUp_TriggerPulses.m',60,1)">60  </a>                    disp('test');
+if system_dependent('IsDebugMode')==1, dbcont; end
+test
+E:\Data\Fietsproef\MatData\pp_14\Classic\normal_data.mat
+<a href="matlab: opentoline('C:\Users\u0088756\Documents\Teaching\MasterThesis\Anouck_Theresa\Software\Examples\CleanUp_TriggerPulses.m',60,1)">60  </a>                    disp('test');
+if system_dependent('IsDebugMode')==1, dbcont; end
+test
+E:\Data\Fietsproef\MatData\pp_14\Classic\slow_data.mat
+<a href="matlab: opentoline('C:\Users\u0088756\Documents\Teaching\MasterThesis\Anouck_Theresa\Software\Examples\CleanUp_TriggerPulses.m',60,1)">60  </a>                    disp('test');
+if system_dependent('IsDebugMode')==1, dbcont; end
+test
+E:\Data\Fietsproef\MatData\pp_14\Classic\DualTask_data.mat
+if system_dependent('IsDebugMode')==1, dbcont; end
+test
+E:\Data\Fietsproef\MatData\pp_15\EBike\normal_data.mat
+if system_dependent('IsDebugMode')==1, dbcont; end
+test
+E:\Data\Fietsproef\MatData\pp_16\Classic\normal_data.mat
+if system_dependent('IsDebugMode')==1, dbquit all; end
+clc
+close all
+clc
+MatlabDark
+Imported color scheme WITHOUT boolean options from
+C:\Users\u0088756\Documents\Software\MatlabToolBox\matlab-schemer\schemes\monokai.prf
+Some changes require MATLAB to be restarted to be activated.
