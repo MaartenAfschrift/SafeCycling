@@ -8,14 +8,16 @@ ExportPath = 'C:\Users\u0088756\Documents\Teaching\MasterThesis\Anouck_Theresa\D
 filename = 'Trial3'; % filename
 
 % location of sensors
-StringLocation  = {'Steer','Frame','Trunk','KneeL','KneeR','Pelvis'};
-nsensor = length(StringLocation);
+Loc  = {'Steer','Frame','Trunk','KneeL','KneeR','Pelvis'};
+nsensor = length(Loc);
+
+% sequential order of events
+OrderEvents     = {'small','slalom','obstacles','FullTurn','Walk','DualTask','onehand','brake'};
 
 % get the data
 [Data,tTrigger,header] = CombineRawData(ExportPath,filename);
 
-
-
+% Richting hoeksnelheid: w/|w|
 
 %% Plot some figures
 
@@ -24,8 +26,8 @@ iRoll = find(strcmp(header,'Roll'));
 figure('Name','euler angles');
 for i=1:nsensor
     subplot(2,3,i)
-    plot(Data.(StringLocation{i}).t,Data.(StringLocation{i}).data(:,iRoll:iRoll+2));
-    title(StringLocation{i})
+    plot(Data.(Loc{i}).t,Data.(Loc{i}).data(:,iRoll:iRoll+2));
+    title(Loc{i})
     xlabel('time [s]');
     ylabel('orientation [deg]');
     vline(tTrigger,'--r');
@@ -37,8 +39,8 @@ iSel = find(strcmp(header,'Gyr_X')); % select index of gyroscope (angular veloci
 figure('Name','gyroscope');
 for i=1:nsensor
     subplot(2,3,i)
-    plot(Data.(StringLocation{i}).t,Data.(StringLocation{i}).data(:,iSel:iSel+2));
-    title(StringLocation{i})
+    plot(Data.(Loc{i}).t,Data.(Loc{i}).data(:,iSel:iSel+2));
+    title(Loc{i})
     xlabel('time [s]');
     ylabel('angular velocity [deg/s]');
     vline(tTrigger,'--r');
@@ -53,8 +55,8 @@ iSel = find(strcmp(header,'Acc_X')); % select index of gyroscope (angular veloci
 figure('Name','acceleration');
 for i=1:nsensor
     subplot(2,3,i)
-    plot(Data.(StringLocation{i}).t,Data.(StringLocation{i}).data(:,iSel:iSel+2));
-    title(StringLocation{i})
+    plot(Data.(Loc{i}).t,Data.(Loc{i}).data(:,iSel:iSel+2));
+    title(Loc{i})
     xlabel('time [s]');
     ylabel('acceleration [m/s2]');
     vline(tTrigger,'--r');
@@ -70,8 +72,8 @@ iSel = find(strcmp(header,'FreeAcc_X')); % select index of gyroscope (angular ve
 figure('Name','Free acceleration');
 for i=1:nsensor
     subplot(2,3,i)
-    plot(Data.(StringLocation{i}).t,Data.(StringLocation{i}).data(:,iSel:iSel+2));
-    title(StringLocation{i})
+    plot(Data.(Loc{i}).t,Data.(Loc{i}).data(:,iSel:iSel+2));
+    title(Loc{i})
     xlabel('time [s]');
     ylabel('acceleration [m/s2]');
     vline(tTrigger,'--r');
@@ -81,7 +83,7 @@ for i=1:nsensor
 end
 legend('x','y','z');
 
-%% Plot results of the slalom only
+%% Example: Plot angular acceleration of the slalom only
 
 % index of the slalom 
 iSlalom = find(strcmp(OrderEvents,'slalom'));
@@ -91,10 +93,10 @@ iSel = find(strcmp(header,'Gyr_X')); % select index of gyroscope (angular veloci
 figure('Name','gyroscope');
 for i=1:nsensor
     subplot(2,3,i)
-    tSel = Data.(StringLocation{i}).(OrderEvents{iSlalom}).t;
+    tSel = Data.(Loc{i}).(OrderEvents{iSlalom}).t;
     tSel = tSel-tSel(1);
-    plot(tSel, Data.(StringLocation{i}).(OrderEvents{iSlalom}).data(:,iSel:iSel+2));
-    title(StringLocation{i})
+    plot(tSel, Data.(Loc{i}).(OrderEvents{iSlalom}).data(:,iSel:iSel+2));
+    title(Loc{i})
     xlabel('time [s]');
     ylabel('angular velocity [deg/s]');
 %     if i>3
