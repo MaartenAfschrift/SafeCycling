@@ -1,59 +1,61 @@
 
 
 
-%% Path info 
+%% Settings
+
+% settings for figure
+PosFigure = [561 270  1508  839];
+
+% Boolean to select if you want to re-analyse the data
+Bool_ReAnalyse = true;
+
+% Path information
 DataPath  = 'E:\Data\Fietsproef\MatData';
 nPP = 81;
 Folders = {'Classic','EBike'};
 OrderMeas       = {'normal','slow','DualTask','extra','extra2','extra3'};
-OrderEvents_Call     = {'Call-person','Call-bike','small','slalom','obstacles','FullTurn','Walk','DualTask','onehand','AfterDrop','brake','add1','add2'};
-OrderEvents_Norm     = {'Start','small','slalom','obstacles','FullTurn','Walk','DualTask','onehand','AfterDrop','brake','add1','add2'};
-
-
-Bool_ReAnalyse = true;
 %% Cleaning up trigger pulses
 
 % get reported error in trigger pulses
 [TrigError,ListCall2] = getTriggerError();
 
 % loop over all subjects
-
-for s = 1:nPP
+for s = 10
     ppPath = ['pp_' num2str(s)];
     for f = 1:length(Folders)
         for i=1:3
+            
+            % expect 12 triggers in first trial (callibration) and 11
+            % trigers in other trials
             if i ==1
                 nExpect = 12;
                 
             else
                 nExpect = 11;
             end
+            
+            % reported mistakes in the callibration procedure
             if (s==1) || (s==3 && f==2) % known errors
                 if i ==2
                     nExpect = 12;                    
                 else
                     nExpect = 11;
                 end
-            end
-            if nExpect == 12
-                OrderEvents = OrderEvents_Call;
-            else
-                OrderEvents =  OrderEvents_Norm;
-            end
-            
+            end           
+           
+            % load the data
             OutName = [OrderMeas{i} '_data.mat'];
             OutPathMat = fullfile(DataPath,ppPath,Folders{f});
             filename = fullfile(OutPathMat,OutName);
             if exist(filename,'file')
-                load(filename,'tTrigger','Data','header');
+                % load the mat file (processed with ExampleBatch2)
+                load(filename,'tTrigger','Data','header');                
                 
-                % we will debug the triggers here
-                % first check if this file is in the list with errors
+                % evaluate if we have the expected number of trigger pulses
                 nTrigger = length(tTrigger);
-                % second check: has the file the number of trigger we
-                % expect ?
-                BoolError = nExpect~=nTrigger;                 
-                % third check based on  identification full turn
+                BoolError = nExpect~=nTrigger;      
+                
+                % evaluate if File was already analysed
                 BoolAnalyzed = false;
                 if isfield(Data,'BoolCheckTrigger')
                     BoolAnalyzed = Data.BoolCheckTrigger;
@@ -69,10 +71,14 @@ for s = 1:nPP
                     BoolError = true;
                 end
                 
-                if BoolError && (~BoolAnalyzed || Bool_ReAnalyse) && ~ErrorGUI
+                if BoolError && ~BoolAnalyzed && ~ErrorGUI
                    
+                    % GUI to change trigger pulses
                     tTriggerRaw = tTrigger;
-                    [tTrigger,BoolSkipped,BoolErrorGUI] = Control_Triggers(Data,tTrigger,nExpect,filename);
+%                     [tTrigger,BoolSkipped,BoolErrorGUI] = Control_Triggers(Data,tTrigger,...
+%                         nExpect,filename,PosFigure);                    
+                    [tTrigger,BoolSkipped,BoolErrorGUI] = Control_TriggersV2(Data,tTrigger,...
+                        nExpect,filename,PosFigure);
                     
                     % Boolean to determine if file was analysed
                     if ~BoolSkipped

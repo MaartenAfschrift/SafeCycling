@@ -1,4 +1,4 @@
-function [tTrigger,BoolSkipped,BoolError] = Control_Triggers(Data,tTrigger,nExpect,name,varargin)
+function [tTrigger,BoolSkipped,BoolError] = Control_TriggersV2(Data,tTrigger,nExpect,name,varargin)
 %UNTITLED Summary of this function goes here
 %   Detailed explanation goes here
 
@@ -21,7 +21,7 @@ else
 end
 
 tTriggerInput = tTrigger;
-h1 = subplot(2,1,1);
+h1 = subplot(3,1,1);
 plot(Data.Frame.t,Data.Frame.QdWorld);
 ylabel('Angular velocity [rad/s]');
 Lines1 = vline(tTrigger,'--r');
@@ -36,7 +36,7 @@ set(gca,'Box','off');
 title(name,'interpreter','none');
 
 
-h2 = subplot(2,1,2);
+h2 = subplot(3,1,2);
 plot(Data.Frame.t,Data.Frame.AccWorld);
 ylabel('Linear acc [m/s2]');
 xlabel('TIme [s]');
@@ -49,23 +49,22 @@ for i =1:length(tTrigger)-1
 end
 set(gca,'Box','off');
 
+
+h3 = subplot(3,1,3);
+plot(Data.KneeL.t,Data.KneeL.QdWorld);
+ylabel('Angular velocity [rad/s]');
+Lines3 = vline(tTrigger,'--r');
+for i =1:length(tTrigger)-1
+    x = tTrigger(i);
+    y = 5-i*0.5;
+    Text3Vect(i)=text(x,y,PhaseNames{i});
+end
+set(gca,'YLim',[-6 6]);
+set(gca,'Box','off');
+
+% Booleans
 BoolSkipped = false;
 BoolError = false;
-% subplot(3,1,3)
-% plot(Data.Trunk.t,Data.Trunk.AccWorld);
-% ylabel('Angular acc - knee [m/s2]');
-% xlabel('Time [s]');
-% vline(tTrigger,'--r');
-% set(gca,'YLim',[-30 30]);
-% for i =1:length(tTrigger)-1
-%    x = tTrigger(i);
-%    y = 25-i*2;
-%    text(x,y,PhaseNames{i});
-% end
-% set(gca,'Box','off');
-
-
-
 
 % set the push buttons
 handl.confrimbutton=uicontrol('String','OK',...
@@ -146,6 +145,21 @@ fig_bol=0;
             x = tTrigger(jj);
             y = 30-jj*4;
             Text2Vect(jj) = text(x,y,PhaseNames{jj});
+        end
+        
+        axes(h3);
+        % delete original lines
+        for il = 1:length(Lines3)
+            delete(Lines3(il))
+        end
+        for il = 1:length(Text3Vect)
+            delete(Text3Vect(il))
+        end
+        Lines3 = vline(tTrigger,'--r');
+        for jj =1:length(tTrigger)-1
+            x = tTrigger(jj);
+            y = 5-jj*0.5;
+            Text3Vect(jj) = text(x,y,PhaseNames{jj});
         end
         
     end
