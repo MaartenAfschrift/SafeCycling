@@ -7,7 +7,7 @@
 PosFigure = [561 270  1508  839];
 
 % Boolean to select if you want to re-analyse the data
-Bool_ReAnalyse = true;
+Bool_ReAnalyse = false;
 
 % Path information
 DataPath  = 'E:\Data\Fietsproef\MatData';
@@ -20,7 +20,7 @@ OrderMeas       = {'normal','slow','DualTask','extra','extra2','extra3'};
 [TrigError,ListCall2] = getTriggerError();
 
 % loop over all subjects
-for s = 10
+for s = 1:nPP
     ppPath = ['pp_' num2str(s)];
     for f = 1:length(Folders)
         for i=1:3
