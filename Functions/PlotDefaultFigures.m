@@ -5,7 +5,7 @@ function [h] = PlotDefaultFigures(Data,tTrigger)
 
 h = figure('Name','gyroscope');
 try
-    Loc = fieldnames(Data);
+    Loc = {'Steer','Frame','Trunk','KneeL','KneeR','Pelvis'};
     nsensor = length(Loc);
     for i=1:nsensor
         if ~isempty(Data.(Loc{i}).data)
@@ -21,7 +21,6 @@ try
         end
     end
     legend('x','y','z');
-    suptitle('Angular velocity in world frame');
 catch
 end
 

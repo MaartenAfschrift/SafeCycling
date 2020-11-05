@@ -27,7 +27,7 @@ disp('Start batch processing');
 disp(date);
 nPP = 81;
 Folders = {'Classic','EBike'};
-for s = 10:nPP
+for s = 1:nPP
     ppPath = ['pp_' num2str(s)];
     for f = 1:length(Folders)
         Fpath = fullfile(datapath,ppPath,Folders{f});
@@ -58,7 +58,7 @@ for s = 10:nPP
             f2Old = fullfile(Fpath,[f2 '-000_00341911.txt']);
             BoolFile1 = exist(f1New,'file') | exist(f1Old,'file');
             BoolFile2 = exist(f2New,'file') | exist(f2Old,'file');
-            disp(filename)
+%             disp(filename)
             if BoolFile1 && BoolFile2
                 
                 % outname of the .mat file                
