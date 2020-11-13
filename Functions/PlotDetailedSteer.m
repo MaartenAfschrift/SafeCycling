@@ -12,7 +12,7 @@ vline(tTrigger,'--r');
 for i =1:length(tTrigger)-1
    x = tTrigger(i);
    y = 2-i*0.1;
-   text(x,y,PhaseNames{i});
+%    text(x,y,PhaseNames{i});
 end
 set(gca,'YLim',[-3 3]);
 set(gca,'Box','off');
@@ -27,7 +27,7 @@ set(gca,'YLim',[-30 30]);
 for i =1:length(tTrigger)-1
    x = tTrigger(i);
    y = 25-i*2;
-   text(x,y,PhaseNames{i});
+%    text(x,y,PhaseNames{i});
 end
 set(gca,'Box','off');
 

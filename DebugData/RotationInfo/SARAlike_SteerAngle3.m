@@ -4,10 +4,18 @@ clear all; close all; clc;
 
 % data with example of one callibration 
 % load('ExampleData.mat','t','R_fr','R_st');
-load('normal_data.mat');
-% select indices of callibration
 % dt = [17 44];
-dt = [1 100];
+% select indices of callibration
+
+
+% load('normal_data_V2.mat');
+% dt = [17 21.5];
+
+load('normal_data_V3.mat');
+dt = [21 28];
+
+
+
 iFrame = Data.Frame.t>=dt(1) & Data.Frame.t<=dt(2);
 iSteer = Data.Steer.t>=dt(1) & Data.Steer.t<=dt(2);
 
@@ -56,7 +64,7 @@ xlabel('frames');
 % Create new axis in the "bike frame" such that the new x-axis point in the
 % direction of n_frame. x-axis seems to be a good idea since this
 % the largest component in n_frame)
-
+§&  ²
 % 2. Je kan ook je frame-assenstelsel herdefinieren. Stel x_new_in_frame = n
 % (maar zou hiervoor de as nemen die al het dichtst bij n ligt). z_new_in_frame
 % = n x y [0 1 0], en y_new_in_frame = z_new_in_frame x n.  Dan kan je daaruit
@@ -64,40 +72,46 @@ xlabel('frames');
 % (dus transformeren). Die dan met R_i vermenigvuldigen, R_t*R_i en dan kan je volgens 
 % mij Eulerhoeken berekenen en zou je enkel een noemenswaardige rotatie rond x moeten vinden.
 
+z = cross(n_steer,[0 1 0]);
+y = cross(z,n_steer);
+
+R =  [n_steer'; y; z];
+
+Test = R*n_steer;
 %%
-import casadi.*
-opti = casadi.Opti();
-
-% rotation from Steer expressed in coordinate system frame (constant)
-% xRot = opti.variable(1,1);
-yRot = opti.variable(1,1);
-zRot = opti.variable(1,1);
-% get rotation matrices for rotation steer in frame bike
-% Rx = rotx_casadi(xRot);
-Ry = roty_casadi(yRot);
-Rz = rotz_casadi(zRot);
-% R = Rx*Ry*Rz; % constant rotation matrix from steer to frame
-R = Ry*Rz; % constant rotation matrix from steer to frame
-
-J = sumsqr([1 0 0]' - R*n_frame);
-% J = J + 0.00001*sumsqr([xRot yRot zRot]);
-opti.minimize(J);
-
-% solver
-options.ipopt.mu_strategy           = 'adaptive';
-options.ipopt.max_iter              = 10000;
-options.ipopt.linear_solver         = 'mumps';
-options.ipopt.tol                   = 1*10^-6;
-opti.solver('ipopt', options);
-S = opti.solve();
-R = S.value(R);
+% import casadi.*
+% opti = casadi.Opti();
+% 
+% % rotation from Steer expressed in coordinate system frame (constant)
+% % xRot = opti.variable(1,1);
+% yRot = opti.variable(1,1);
+% zRot = opti.variable(1,1);
+% % get rotation matrices for rotation steer in frame bike
+% % Rx = rotx_casadi(xRot);
+% Ry = roty_casadi(yRot);
+% Rz = rotz_casadi(zRot);
+% % R = Rx*Ry*Rz; % constant rotation matrix from steer to frame
+% R = Ry*Rz; % constant rotation matrix from steer to frame
+% 
+% J = sumsqr([1 0 0]' - R*n_frame);
+% % J = J + 0.00001*sumsqr([xRot yRot zRot]);
+% opti.minimize(J);
+% 
+% % solver
+% options.ipopt.mu_strategy           = 'adaptive';
+% options.ipopt.max_iter              = 10000;
+% options.ipopt.linear_solver         = 'mumps';
+% options.ipopt.tol                   = 1*10^-6;
+% opti.solver('ipopt', options);
+% S = opti.solve();
+% R = S.value(R);
 
 
 %% compute steer angle
 
 R_Axis = nan(3,3,nfr);
 for i =1:nfr
-    R_Axis(:,:,i) = R*Rst_fr(:,:,i);
+    R_Axis(:,:,i) = (R*Rst_fr(:,:,i))*(R*Rst_fr(:,:,1))';
 end
 qAxis = rotm2eul(R_Axis,'XYZ');
 subplot(2,2,2);
@@ -123,7 +137,7 @@ end
 % in new coordinate system
 R_Axis = nan(3,3,nfr);
 for i =1:nfr
-    R_Axis(:,:,i) = R*Rst_fr(:,:,i);
+    R_Axis(:,:,i) = (R*Rst_fr(:,:,i))*(R*Rst_fr(:,:,1))';
 end
 
 % compute an plot euler angles
@@ -136,5 +150,12 @@ ylabel('Angle [rad]');
 title('full cycling parcours');
 
 
-
+% 
+% %% plot default figure
+% PlotDetailedSteer(Data,tTrigger);
+% 
+% 
+% %% Other trial
+% load('normal_data_V3.mat');
+% PlotDetailedSteer(Data,tTrigger);
 

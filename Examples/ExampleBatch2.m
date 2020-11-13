@@ -18,7 +18,11 @@ addpath(genpath(MainPath));
 
 % location of sensors
 StringLocation  = {'Steer','Frame','Trunk','KneeL','KneeR','Pelvis'};
+% ExtSensors      = {'_00B42D0F','_00B42D71','_00B42D95','_00341911','_00341912','_00342392'};
+% order of evenets
 OrderEvents     = {'Call1','small','slalom','obstacles','FullTurn','Walk','DualTask','onehand','AfterDrop','brake','temp','temp','temp'};
+
+% order of measured trials
 OrderMeas       = {'normal','slow','DualTask','extra','extra2','extra3'};
 
 diary('LogBatchProcessing.txt');
