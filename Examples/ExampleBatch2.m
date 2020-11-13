@@ -17,7 +17,7 @@ Bool_ReExport = 1;
 addpath(genpath(MainPath));
 
 % location of sensors
-StringLocation  = {'Steer','Frame','Trunk','KneeL','KneeR','Pelvis'};
+StringLocation  = {'Steer','Frame','Trunk','KneeR','KneeL','Pelvis'};
 % ExtSensors      = {'_00B42D0F','_00B42D71','_00B42D95','_00341911','_00341912','_00342392'};
 % order of evenets
 OrderEvents     = {'Call1','small','slalom','obstacles','FullTurn','Walk','DualTask','onehand','AfterDrop','brake','temp','temp','temp'};
