@@ -147,11 +147,13 @@ try
     % get the final time in the 6 sensors and add NaN if needed
     tsensors = nan(1,6);
     for i =1:nsensor
-         tsensors(i) = Data.(StringLocation{i}).t(end);
+        if ~isempty(Data.(StringLocation{i}).data)
+            tsensors(i) = Data.(StringLocation{i}).t(end);
+        end
     end
     tEnd = max(tsensors);
     for i =1:nsensor
-        if Data.(StringLocation{i}).t(end)<tEnd
+        if ~isempty(Data.(StringLocation{i}).data) && Data.(StringLocation{i}).t(end)<tEnd
             Data.(StringLocation{i}).t = [Data.(StringLocation{i}).t tEnd];
             Data.(StringLocation{i}).data = [Data.(StringLocation{i}).data; nan(size(Data.(StringLocation{i}).data(1,:)))];
         end
@@ -268,60 +270,60 @@ try
     % we need to manually adapt the events first (see
     % CleanUp_TriggerPulses.m)
     
-%     % To Do: add some warnings when:
-%     %   - triggers are missing
-%     %   - too long ?
-%     %   - ...
-%     disp(['      - ' num2str(length(tTrigger)) ' triggers detected in file']);
-%     if length(tTrigger) == 10
-%         OrderEvents = OrderEvents(2:end);
-%         disp('      - no callibration selected');
-%     elseif length(tTrigger) == 12
-%         % we seem to have two bugs here:
-%         % (1) or there is a double trigger for the callibration (in the
-%         % middle).
-%         % (2) or there is a double trigger during the phase looking
-%         % backwards.
-%         OrderEvents = OrderEvents(2:end);
-%         disp('      - no callibration selected');
-%     end
-%     nEvents = length(tTrigger);   % number of events    
-%     if nEvents>=length(OrderEvents)
-%         for i = 1:length(OrderEvents)
-%             for j = 1:nsensor
-%                 if ~isempty(Data.(StringLocation{j}).data)
-%                     % get start and end of the time vector
-%                     t = Data.(StringLocation{j}).t;
-%                     t0 = tTrigger(i);
-%                     if i < nEvents
-%                         tend = tTrigger(i+1);
-%                     else
-%                         tend = length(t);
-%                     end
-%                     % select the data in this time interval
-%                     iSel = t>=t0 & t<= tend;
-%                     % data structure
-%                     Data.(StringLocation{j}).(OrderEvents{i}).data = ...
-%                         Data.(StringLocation{j}).data(iSel,:);
-%                     % time vector
-%                     Data.(StringLocation{j}).(OrderEvents{i}).t = t(iSel);
-%                     % rotation matrix
-%                     Data.(StringLocation{j}).(OrderEvents{i}).R = ...
-%                         Data.(StringLocation{j}).R(:,:,iSel);
-%                     % euler angles
-%                     Data.(StringLocation{j}).(OrderEvents{i}).eul = ...
-%                         Data.(StringLocation{j}).eul(iSel,:);
-%                     % Raw data expressed in word frame
-%                     Data.(StringLocation{j}).(OrderEvents{i}).AccWorld= ...
-%                         Data.(StringLocation{j}).AccWorld(iSel,:);
-%                     Data.(StringLocation{j}).(OrderEvents{i}).QdWorld= ...
-%                         Data.(StringLocation{j}).QdWorld(iSel,:);
-%                 end
-%             end
-%         end
-%     else
-%         disp(['      - Only : ' num2str(nEvents) ' events detected in file ' fullfile(datapath,filename{1})]);
-%     end
+    %     % To Do: add some warnings when:
+    %     %   - triggers are missing
+    %     %   - too long ?
+    %     %   - ...
+    %     disp(['      - ' num2str(length(tTrigger)) ' triggers detected in file']);
+    %     if length(tTrigger) == 10
+    %         OrderEvents = OrderEvents(2:end);
+    %         disp('      - no callibration selected');
+    %     elseif length(tTrigger) == 12
+    %         % we seem to have two bugs here:
+    %         % (1) or there is a double trigger for the callibration (in the
+    %         % middle).
+    %         % (2) or there is a double trigger during the phase looking
+    %         % backwards.
+    %         OrderEvents = OrderEvents(2:end);
+    %         disp('      - no callibration selected');
+    %     end
+    %     nEvents = length(tTrigger);   % number of events
+    %     if nEvents>=length(OrderEvents)
+    %         for i = 1:length(OrderEvents)
+    %             for j = 1:nsensor
+    %                 if ~isempty(Data.(StringLocation{j}).data)
+    %                     % get start and end of the time vector
+    %                     t = Data.(StringLocation{j}).t;
+    %                     t0 = tTrigger(i);
+    %                     if i < nEvents
+    %                         tend = tTrigger(i+1);
+    %                     else
+    %                         tend = length(t);
+    %                     end
+    %                     % select the data in this time interval
+    %                     iSel = t>=t0 & t<= tend;
+    %                     % data structure
+    %                     Data.(StringLocation{j}).(OrderEvents{i}).data = ...
+    %                         Data.(StringLocation{j}).data(iSel,:);
+    %                     % time vector
+    %                     Data.(StringLocation{j}).(OrderEvents{i}).t = t(iSel);
+    %                     % rotation matrix
+    %                     Data.(StringLocation{j}).(OrderEvents{i}).R = ...
+    %                         Data.(StringLocation{j}).R(:,:,iSel);
+    %                     % euler angles
+    %                     Data.(StringLocation{j}).(OrderEvents{i}).eul = ...
+    %                         Data.(StringLocation{j}).eul(iSel,:);
+    %                     % Raw data expressed in word frame
+    %                     Data.(StringLocation{j}).(OrderEvents{i}).AccWorld= ...
+    %                         Data.(StringLocation{j}).AccWorld(iSel,:);
+    %                     Data.(StringLocation{j}).(OrderEvents{i}).QdWorld= ...
+    %                         Data.(StringLocation{j}).QdWorld(iSel,:);
+    %                 end
+    %             end
+    %         end
+    %     else
+    %         disp(['      - Only : ' num2str(nEvents) ' events detected in file ' fullfile(datapath,filename{1})]);
+    %     end
     
     % add path information to the datastructure:
     Data.Path.datapath = datapath;

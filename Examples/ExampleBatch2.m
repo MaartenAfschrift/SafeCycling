@@ -31,7 +31,7 @@ disp('Start batch processing');
 disp(date);
 nPP = 81;
 Folders = {'Classic','EBike'};
-for s = 1:nPP
+for s = 3;%1:nPP
     ppPath = ['pp_' num2str(s)];
     for f = 1:length(Folders)
         Fpath = fullfile(datapath,ppPath,Folders{f});
