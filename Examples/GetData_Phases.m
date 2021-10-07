@@ -4,8 +4,7 @@
 %% Compute rotaton axis of the steer for each subject
 clear all; close all; clc;
 % Path information
-DataPath  = 'E:\Data\Fietsproef\MatData';
-FigPath = 'E:\Data\Fietsproef\Figures\HingeSteer';
+DataPath  = 'S:\Data\fietsproef\Data\MatData';
 nPP = 81;
 Folders = {'Classic','EBike'};
 OrderMeas = {'normal','slow','DualTask','extra','extra2','extra3'};

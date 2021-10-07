@@ -2110,3 +2110,48 @@ Subject 79 / 81
 Subject 80 / 81
 most likely drift in : E:\Data\Fietsproef\MatData\pp_81\Classic\slow_data.mat reported as an error
 Subject 81 / 81
+Subject 1 / 81
+most likely drift in : E:\Data\Fietsproef\MatData\pp_2\EBike\slow_data.mat reported as an error
+Subject 2 / 81
+[Warning: Variable 'Phases' not found.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Example_NarrowLane', 'C:\Users\u0088756\Documents\Teaching\MasterThesis\Anouck_Theresa\Software\Examples\Example_NarrowLane.m', 58)" style="font-weight:bold">Example_NarrowLane</a> (<a href="matlab: opentoline('C:\Users\u0088756\Documents\Teaching\MasterThesis\Anouck_Theresa\Software\Examples\Example_NarrowLane.m',58,0)">line 58</a>)] 
+[Warning: Variable 'Phases' not found.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Example_NarrowLane', 'C:\Users\u0088756\Documents\Teaching\MasterThesis\Anouck_Theresa\Software\Examples\Example_NarrowLane.m', 58)" style="font-weight:bold">Example_NarrowLane</a> (<a href="matlab: opentoline('C:\Users\u0088756\Documents\Teaching\MasterThesis\Anouck_Theresa\Software\Examples\Example_NarrowLane.m',58,0)">line 58</a>)] 
+[Warning: Variable 'Phases' not found.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Example_NarrowLane', 'C:\Users\u0088756\Documents\Teaching\MasterThesis\Anouck_Theresa\Software\Examples\Example_NarrowLane.m', 58)" style="font-weight:bold">Example_NarrowLane</a> (<a href="matlab: opentoline('C:\Users\u0088756\Documents\Teaching\MasterThesis\Anouck_Theresa\Software\Examples\Example_NarrowLane.m',58,0)">line 58</a>)] 
+[Warning: Variable 'Phases' not found.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Example_NarrowLane', 'C:\Users\u0088756\Documents\Teaching\MasterThesis\Anouck_Theresa\Software\Examples\Example_NarrowLane.m', 58)" style="font-weight:bold">Example_NarrowLane</a> (<a href="matlab: opentoline('C:\Users\u0088756\Documents\Teaching\MasterThesis\Anouck_Theresa\Software\Examples\Example_NarrowLane.m',58,0)">line 58</a>)] 
+Subject 3 / 81
+[Warning: Variable 'Phases' not found.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Example_NarrowLane', 'C:\Users\u0088756\Documents\Teaching\MasterThesis\Anouck_Theresa\Software\Examples\Example_NarrowLane.m', 58)" style="font-weight:bold">Example_NarrowLane</a> (<a href="matlab: opentoline('C:\Users\u0088756\Documents\Teaching\MasterThesis\Anouck_Theresa\Software\Examples\Example_NarrowLane.m',58,0)">line 58</a>)] 
+possible error in file: E:\Data\Fietsproef\MatData\pp_4\EBike\DualTask_data.mat
+most likely drift in : E:\Data\Fietsproef\MatData\pp_4\EBike\DualTask_data.mat reported as an error
+Subject 4 / 81
+Subject 5 / 81
+most likely drift in : E:\Data\Fietsproef\MatData\pp_6\EBike\slow_data.mat reported as an error
+Subject 6 / 81
+Subject 7 / 81
+[Warning: Variable 'Phases' not found.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Example_NarrowLane', 'C:\Users\u0088756\Documents\Teaching\MasterThesis\Anouck_Theresa\Software\Examples\Example_NarrowLane.m', 58)" style="font-weight:bold">Example_NarrowLane</a> (<a href="matlab: opentoline('C:\Users\u0088756\Documents\Teaching\MasterThesis\Anouck_Theresa\Software\Examples\Example_NarrowLane.m',58,0)">line 58</a>)] 
+most likely drift in : E:\Data\Fietsproef\MatData\pp_8\EBike\DualTask_data.mat reported as an error
+Subject 8 / 81
+[Warning: Variable 'Phases' not found.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Example_NarrowLane', 'C:\Users\u0088756\Documents\Teaching\MasterThesis\Anouck_Theresa\Software\Examples\Example_NarrowLane.m', 58)" style="font-weight:bold">Example_NarrowLane</a> (<a href="matlab: opentoline('C:\Users\u0088756\Documents\Teaching\MasterThesis\Anouck_Theresa\Software\Examples\Example_NarrowLane.m',58,0)">line 58</a>)] 
+most likely drift in : E:\Data\Fietsproef\MatData\pp_9\Classic\normal_data.mat reported as an error
+Subject 9 / 81
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Example_NarrowLane', 'C:\Users\u0088756\Documents\Teaching\MasterThesis\Anouck_Theresa\Software\Examples\Example_NarrowLane.m', 58)" style="font-weight:bold">Example_NarrowLane</a> (<a href="matlab: opentoline('C:\Users\u0088756\Documents\Teaching\MasterThesis\Anouck_Theresa\Software\Examples\Example_NarrowLane.m',58,0)">line 58</a>)
+} 
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('internal.matlab.datatoolsservices.WorkspaceListener/setupListeners', 'C:\Program Files\MATLAB\R2020a\toolbox\matlab\datatools\datatoolsservices\matlab\+internal\+matlab\+datatoolsservices\WorkspaceListener.p', 26)" style="font-weight:bold">internal.matlab.datatoolsservices.WorkspaceListener/setupListeners</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2020a\toolbox\matlab\datatools\datatoolsservices\matlab\+internal\+matlab\+datatoolsservices\WorkspaceListener.p',26,0)">line 26</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('internal.matlab.datatoolsservices.WorkspaceListener.DisbleLXEListeners', 'C:\Program Files\MATLAB\R2020a\toolbox\matlab\datatools\datatoolsservices\matlab\+internal\+matlab\+datatoolsservices\WorkspaceListener.p', 128)" style="font-weight:bold">internal.matlab.datatoolsservices.WorkspaceListener.DisbleLXEListeners</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2020a\toolbox\matlab\datatools\datatoolsservices\matlab\+internal\+matlab\+datatoolsservices\WorkspaceListener.p',128,0)">line 128</a>)
+            [A, B, C, D, E] = internal.matlab.datatoolsservices.WorkspaceListener.setupListeners();
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('internal.matlab.datatoolsservices.WorkspaceListener.ExecuteWorkspaceListeners', 'C:\Program Files\MATLAB\R2020a\toolbox\matlab\datatools\datatoolsservices\matlab\+internal\+matlab\+datatoolsservices\WorkspaceListener.p', 154)" style="font-weight:bold">internal.matlab.datatoolsservices.WorkspaceListener.ExecuteWorkspaceListeners</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2020a\toolbox\matlab\datatools\datatoolsservices\matlab\+internal\+matlab\+datatoolsservices\WorkspaceListener.p',154,0)">line 154</a>)
+            internal.matlab.datatoolsservices.WorkspaceListener.DisbleLXEListeners;
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('internal.matlab.datatoolsservices.WorkspaceListener>@(es,ed)evalin(''caller'',cmd)', 'C:\Program Files\MATLAB\R2020a\toolbox\matlab\datatools\datatoolsservices\matlab\+internal\+matlab\+datatoolsservices\WorkspaceListener.p', 105)" style="font-weight:bold">internal.matlab.datatoolsservices.WorkspaceListener>@(es,ed)evalin('caller',cmd)</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2020a\toolbox\matlab\datatools\datatoolsservices\matlab\+internal\+matlab\+datatoolsservices\WorkspaceListener.p',105,0)">line 105</a>)
+                foo = @(es,ed)evalin('caller', cmd);
+} 
+Example_NarrowLane
+Outlier in E:\Data\Fietsproef\MatData\pp_1\Classic\normal_data.mat variance in steering angle is 27.1665. Evaluate what is causing this outlier

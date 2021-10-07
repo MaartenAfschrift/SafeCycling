@@ -19,7 +19,7 @@ load(fullfile(DataPath,'RawData','ppInfo.mat'),'ppYoung','ppEld');
 
 
 % flow control
-ComputeDataMatrix = true; % Run part to compute datamatrix (or load saved .mat file)
+ComputeDataMatrix = false; % Run part to compute datamatrix (or load saved .mat file)
 BoolPlot2 = false; % individual plot for each subject with the input data to copumpute variance
 
 % tresholds
@@ -213,7 +213,7 @@ PlotBar(7,DataMatrix(iSel,4),CYoung,mk); hold on;
 iSel = DataMatrix(:,5) == 1 &  DataMatrix(:,3) == 3 & DataMatrix(:,2) == 1 & DataMatrix(:,6) == 0;
 PlotBar(8,DataMatrix(iSel,4),CEld,mk); hold on;
 
-ylabel('Variance steering angle [deg]');
+% ylabel('Variance steering angle [deg]');
 set(gca,'XTick',[1.5 4.5 7.5]);
 set(gca,'XTickLabel',{'Normal','Slow','DualTask'});
 title('Normal Bike');

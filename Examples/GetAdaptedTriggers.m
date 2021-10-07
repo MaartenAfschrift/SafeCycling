@@ -4,7 +4,7 @@
 
 
 % Path information
-DataPath  = 'E:\Data\Fietsproef\MatData';
+DataPath  = 'S:\Data\fietsproef\Data\MatData';
 nPP = 81;
 Folders = {'Classic','EBike'};
 OrderMeas       = {'normal','slow','DualTask','extra','extra2','extra3'};
