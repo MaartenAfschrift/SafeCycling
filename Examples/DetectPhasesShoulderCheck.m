@@ -21,7 +21,7 @@ OrderMeas = {'normal','slow'};
 [TrigError,ListCall2] = getTriggerError();
 
 % loop over all subjects
-for s = 50:nPP
+for s = 1:nPP
     ppPath = ['pp_' num2str(s)];
     for f = 1:length(Folders)
         for i=1:length(OrderMeas)

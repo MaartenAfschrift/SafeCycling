@@ -30,12 +30,14 @@ Lines2 = vline(tEnd,'--r');
 
 % figure with orientation trunk
 h2 = subplot(3,1,2);
-if isfield(Phases,'Trunk')    
+if isfield(Phases,'Trunk')
     Rtorso = Phases.Trunk.DualTask.R;
     ttorso = Phases.Trunk.DualTask.t;
-    [eulTorso] = GetEulAngles_ShoulderCheck(Rtorso);
-    plot(ttorso,eulTorso(:,1),'r','LineWidth',2);
-%     plot(ttorso,0,'--k','LineWidth',0.5); hold on;
+    if ~isempty(Rtorso)
+        [eulTorso] = GetEulAngles_ShoulderCheck(Rtorso);
+        plot(ttorso,eulTorso(:,1),'r','LineWidth',2);
+    end
+    %     plot(ttorso,0,'--k','LineWidth',0.5); hold on;
 end
 ylabel('orientation trunk');
 xlabel('time [s]');
@@ -49,9 +51,11 @@ h3 = subplot(3,1,3);
 if isfield(Phases,'Pelvis')
     Rpelvis = Phases.Pelvis.DualTask.R;
     tpelvis = Phases.Pelvis.DualTask.t;
-    [eulpelvis] = GetEulAngles_ShoulderCheck(Rpelvis);
-    plot(tpelvis,eulpelvis(:,1),'b','LineWidth',2);
-%     plot(tpelvis,0,'--k','LineWidth',0.5); hold on;
+    if ~isempty(Rpelvis)
+        [eulpelvis] = GetEulAngles_ShoulderCheck(Rpelvis);
+        plot(tpelvis,eulpelvis(:,1),'b','LineWidth',2);
+    end
+    %     plot(tpelvis,0,'--k','LineWidth',0.5); hold on;
 end
 ylabel('orientation pelvis');
 xlabel('time [s]');
@@ -59,7 +63,7 @@ set(gca,'Box','off');
 
 
 
-% OK 
+% OK
 handl.OK=uicontrol('String','OK',...
     'position',[20 10 100 40],...
     'style','togglebutton');
@@ -74,9 +78,9 @@ set(handl.skip,'Callback',{@Skip});
 
 % set the push buttons
 
-cbx_Drift  = uicontrol('Style','checkbox','String','Drift', ...
-                       'Value',0,'Position',[50 150 100 40],        ...
-                        'Callback',@checkBoxDrift,'FontSize',14);
+cbx_Drift  = uicontrol('Style','checkbox','String','Drift Pelvis', ...
+    'Value',0,'Position',[20 150 100 40],        ...
+    'Callback',@checkBoxDrift,'FontSize',14);
 
 
 offy =120;
@@ -109,7 +113,7 @@ set(handl.RemoveEnd,'Callback',{@Remove_End});
 
 
 
-                    
+
 % handl.drift=uicontrol('String','Drift',...
 %     'position',[20 700 100 40],...
 %     'style','togglebutton');
@@ -145,7 +149,7 @@ fig_bol=0;
 
 % Interface
     function confirm_function( handle,eventdata)
-        fig_bol=1;        
+        fig_bol=1;
     end
 
     function Remove_Start(handle,eventdata)
