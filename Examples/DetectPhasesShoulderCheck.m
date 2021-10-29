@@ -4,17 +4,18 @@
 %% Settings
 close all; clc;
 % settings for figure (you can adjust these positions if you want)
-PosFigure = [157         108        1535         852];
+PosFigure = [504         277        1535         852];
 
 % Boolean to select if you want to re-analyse the data
 Bool_ReAnalyse = false;
 
 % Path information
-DataPath  = 'S:\Data\fietsproef\Data\MatData';
+DataPath  = 'E:\fietsproef\Data\MatData';
+addpath(genpath('C:\Users\r0721298\Documents\software\SafeCycling'));
 nPP = 81;
 Folders = {'Classic','EBike'};
 % OrderMeas = {'normal','slow','DualTask','extra','extra2','extra3'};
-OrderMeas = {'normal','slow'};
+OrderMeas = {'normal'};
 %% Cleaning up trigger pulses
 
 % get reported error in trigger pulses
