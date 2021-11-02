@@ -432,7 +432,9 @@ saveas(gcf,fullfile(figPath,'ROM_Pelvis_Torso_ShoulderCheck.svg'),'svg');
 saveas(gcf,fullfile(figPath,'ROM_Pelvis_Torso_ShoulderCheck.png'),'png');
 
 %%
-%paired t-test tussen
+%paired ttest for all data analyzed in the young and older subjects (Note
+%that this includes data of cycling at differents speeds, duals task and
+%different bikes).
 iGender = strcmp(header_DataMatrix,'BoolElderly');
 iYoung = DataMatrix(:,iGender) == 0 ;
 iOld = DataMatrix(:,iGender) == 1 ;
