@@ -10,11 +10,8 @@ Folders = {'Classic','EBike'};
 OrderMeas = {'normal'};
 SensorLocation  = {'Steer','Frame','Trunk','KneeL','KneeR','Pelvis'};
 
-
 % load the info of the folders
-%load(fullfile(DataPath,'MatData','ppInfo.mat'),'ppYoung','ppEld');
-%lissa
-load(fullfile(DataPath,'MatData','ppInfo.mat'),'ppYoung','ppEld','ppYoung_extra','ppEld_extra');
+load(fullfile(DataPath,'MatData','ppInfo.mat'),'ppYoung','ppEld');
 
 % flow control
 ComputeDataMatrix = true; % Run part to compute datamatrix (or load saved .mat file)
@@ -38,27 +35,18 @@ ShoulderCheckInfo.header = ShoulderCheckInfo.HeadersOlder;
 
 %% Get the Datamatrix
 if ComputeDataMatrix
-    DataMatrix = nan(100*3*2,8); % pre allocat matrix with all the data
-    header_DataMatrix =  {'s-ID','bike-ID','Speed-ID','ROM-FrameTorso','BoolElderly','Error','ROM-FramePelvis','ROM-PelvisTorso'}; % header for the datamatrix
-    diary('LogExample_ShoulderCheck.txt');
-    
+    DataMatrix = nan(100*3*2,9); % pre allocat matrix with all the data
+    header_DataMatrix =  {'s-ID','bike-ID','Speed-ID','ROM-FrameTorso','BoolElderly','Error','ROM-FramePelvis','ROM-PelvisTorso','SteeringAngle'}; % header for the datamatrix
+    diary('LogExample_ShoulderCheck.txt');    
     ct = 1;
     for s = 1:nPP
-        ppPath = ['pp_' num2str(s)];
-        %   h1 = figure();
-        
-        if BoolPlot2
-            h2 = figure();
-        end
-        
+        ppPath = ['pp_' num2str(s)];        
         % detect if this is a young or an older subject
         BoolEld = any(ppEld ==s);
         BoolYoung = any(ppYoung ==s);
         if BoolEld && BoolYoung
             disp(['Subject ' num2str(s) ' is both young and old. adapt this in the excel file']);
         end
-        
-        
         for f = 1:length(Folders)
             for i =1:length(OrderMeas)
                 % load the data
@@ -72,29 +60,20 @@ if ComputeDataMatrix
                     end
                     if ~exist('Events','var')
                         Events = [];
-                    end
-                    
+                    end                    
                     if exist('Phases','var')
                         BoolErrorFlag = 0;
                         % get the variance in steer angle
                         if isfield(Phases,'SteerAngle') && ~isempty(Phases.SteerAngle.small.t)
-                            
-                            
-                            % event detection for the dual task
-                            
-                            
                             % get the euler angles
-                            if isfield(Phases,'Trunk') && isfield(Phases,'Pelvis') && isfield(Phases,'Frame')
-                                
+                            if isfield(Phases,'Trunk') && isfield(Phases,'Pelvis') && isfield(Phases,'Frame')                                
                                 % check if task was performed according to
                                 % instructions
-                                iData = find(ShoulderCheckInfo.pp== s);
-                                
+                                iData = find(ShoulderCheckInfo.pp== s);                                
                                 if strcmp(Folders{f},'Classic')
                                     if strcmp(OrderMeas{i},'normal')
                                         headerSel = {'KEGEL NIET GEZIEN-normal-classic',...
-                                            'VOET GROND-normal-classic'};
-                                        
+                                            'VOET GROND-normal-classic'};                                        
                                     end
                                 elseif strcmp(Folders{f},'EBike')
                                     if strcmp(OrderMeas{i},'normal')
@@ -108,12 +87,7 @@ if ComputeDataMatrix
                                     IndsColInfo(ic) = find(strcmp(ShoulderCheckInfo.header,headerSel{ic}));
                                 end
                                 DatSel = ShoulderCheckInfo.data(iData,IndsColInfo);
-                                if sum(DatSel) == 0
-                                    
-                                    
-                                    % event detection based on angular velocity
-                                    % around z-axis
-                                    
+                                if sum(DatSel) == 0                                    
                                     % we don't use the first 3 and last 5 seconds in the
                                     % movement
                                     Rtorso = Phases.Trunk.DualTask.R;
@@ -133,25 +107,37 @@ if ComputeDataMatrix
                                         % relative angles
                                         Q_TorsoFrame = eulTorso_int - eulframe;
                                         Q_PelvisFrame = eulPelvis_int - eulframe;
-                                        Q_TorsoPelvis = eulTorso_int -eulPelvis_int;
-                                        
-                                        % einde trial als R frame een bepaalde
-                                        % hoek over gaat
-                                        % get index turned
+                                        Q_TorsoPelvis = eulTorso_int -eulPelvis_int;      
+                                        % event detection based on GUI
+                                        % information
                                         if isfield(Events,'ShoulderCheck') && ~isempty(Events.ShoulderCheck)
-                                            t0 = Events.ShoulderCheck(1) - 0.5;
-                                            tend = Events.ShoulderCheck(2) + 0.5;
                                             
+                                            % rotation of torso w.r.t. to
+                                            % frame
+                                            t0 = Events.ShoulderCheck(1) - 0.5;
+                                            tend = Events.ShoulderCheck(2) + 0.5;                                            
                                             iSel = find(ttorso>t0 & ttorso<tend);
                                             [MinQ,iMin] = min(Q_TorsoFrame(iSel,1));
                                             [MaxQ,iMax] = max(Q_TorsoFrame(iSel,1));
                                             ROM = (MaxQ - MinQ)*180/pi;
                                             
+                                            % steering angle
+                                            t = Phases.SteerAngle.DualTask.t;
+                                            iSel = find(ttorso>t0 & ttorso<tend);
+                                            q = Phases.SteerAngle.DualTask.qSteer(:,1); % steer angle aroud x-axis
+                                            qVar = var(q(iSel));
+                                            qVarDeg = qVar*180/pi;
+                                            % trim unrealistic high variance in steering
+                                            % angle
+                                            if qVarDeg >5
+                                                disp(['possible error in file: ' filename ' remove this file from the analysis']);
+                                                qVarDeg = NaN;
+                                            end
+                                            
                                             if isfield(GUIvar,'Shoulder_Drift') && ~GUIvar.Shoulder_Drift
                                                 [MinQ2,iMin] = min(Q_PelvisFrame(iSel,1));
                                                 [MaxQ2,iMax] = max(Q_PelvisFrame(iSel,1));
-                                                ROM2 = (MaxQ2 - MinQ2)*180/pi;
-                                                
+                                                ROM2 = (MaxQ2 - MinQ2)*180/pi;                                                
                                                 [MinQ3,iMin] = min(Q_TorsoPelvis(iSel,1));
                                                 [MaxQ3,iMax] = max(Q_TorsoPelvis(iSel,1));
                                                 ROM3 = (MaxQ3 - MinQ3)*180/pi;
@@ -171,6 +157,7 @@ if ComputeDataMatrix
                                                 DataMatrix(ct,6) = BoolErrorFlag;
                                                 DataMatrix(ct,7) = ROM2;
                                                 DataMatrix(ct,8) = ROM3;
+                                                DataMatrix(ct,9) = qVarDeg;
                                                 ct = ct+1;
                                             end
                                         end
