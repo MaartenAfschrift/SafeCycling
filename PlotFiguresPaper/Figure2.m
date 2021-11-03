@@ -11,7 +11,7 @@ SensorOr = load(fullfile(DataPath,'Outcomes','ShouldCheckROM.mat'),'DataMatrix',
 figPath = fullfile(pwd,'FigsPaper');
 
 %% FIgure steering angle
-
+diary('Figure2_Log.txt');    
 h = figure();
 set(h,'Position',[113   394   765   623]);
 
@@ -72,4 +72,4 @@ delete_box
 % save the figure
 saveas(gcf,fullfile(figPath,'Figure2.svg'),'svg');
 saveas(gcf,fullfile(figPath,'Figure2.png'),'png');
-
+diary off
