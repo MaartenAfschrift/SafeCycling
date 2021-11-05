@@ -1,6 +1,3 @@
-
-
-
 %% Settings
 % Path information
 clear all; close all; clc;
@@ -12,7 +9,6 @@ OrderMeas       = {'normal','slow','DualTask','extra','extra2','extra3'};
 
 % file with information on adapted triggers
 load(fullfile(DataPath,'TriggerAdapated.mat'),'TriggerAdapted');
-
 
 %% Adapt triggers based on TriggerAdapated.mat
 
@@ -28,8 +24,6 @@ for i = 1:nFiles
     % load the datafile
     if exist(filename,'file')
         load(filename,'tTrigger','Data','header');
-%         disp(num2str(tTrigger'));
-%         disp(num2str(TriggerAdapted(i).tTrigger'));
         Data.tTriggerRaw = tTrigger;
         tTrigger = TriggerAdapted(i).tTrigger;
         Data.BoolCheckTrigger = true;
