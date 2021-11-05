@@ -1,0 +1,112 @@
+steering angle 
+number of young subjects 30
+number of older subjects 27
+ 
+ROM Frame-C7
+number of young subjects 30
+number of older subjects 28
+ 
+ROM Frame-Pelvis
+number of young subjects 23
+number of older subjects 23
+ 
+ROM Pelvis-Trunk
+number of young subjects 23
+number of older subjects 23
+ 
+steering angle 
+number of young subjects 30
+number of older subjects 25
+ 
+ROM Frame-C7
+number of young subjects 30
+number of older subjects 26
+ 
+ROM Frame-Pelvis
+number of young subjects 23
+number of older subjects 22
+ 
+ROM Pelvis-Trunk
+number of young subjects 23
+number of older subjects 22
+ 
+steering angle 
+number of young subjects 30
+number of older subjects 27
+ 
+ROM Frame-C7
+number of young subjects 30
+number of older subjects 28
+ 
+ROM Frame-Pelvis
+number of young subjects 23
+number of older subjects 23
+ 
+ROM Pelvis-Trunk
+number of young subjects 23
+number of older subjects 23
+ 
+steering angle 
+number of young subjects 36
+number of older subjects 27
+ 
+ROM Frame-C7
+number of young subjects 36
+number of older subjects 28
+ 
+ROM Frame-Pelvis
+number of young subjects 23
+number of older subjects 23
+ 
+ROM Pelvis-Trunk
+number of young subjects 23
+number of older subjects 23
+ 
+steering angle 
+number of young subjects 36
+number of older subjects 27
+ 
+ROM Frame-C7
+number of young subjects 36
+number of older subjects 28
+ 
+ROM Frame-Pelvis
+number of young subjects 23
+number of older subjects 23
+ 
+ROM Pelvis-Trunk
+number of young subjects 23
+number of older subjects 23
+ 
+steering angle 
+number of young subjects 36
+number of older subjects 28
+ 
+ROM Frame-C7
+number of young subjects 36
+number of older subjects 28
+ 
+ROM Frame-Pelvis
+number of young subjects 23
+number of older subjects 23
+ 
+ROM Pelvis-Trunk
+number of young subjects 23
+number of older subjects 23
+ 
+steering angle 
+number of young subjects 36
+number of older subjects 27
+ 
+ROM Frame-C7
+number of young subjects 36
+number of older subjects 28
+ 
+ROM Frame-Pelvis
+number of young subjects 23
+number of older subjects 23
+ 
+ROM Pelvis-Trunk
+number of young subjects 23
+number of older subjects 23
+ 

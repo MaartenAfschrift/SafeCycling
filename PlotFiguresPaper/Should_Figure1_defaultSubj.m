@@ -168,6 +168,6 @@ set(gca,'FontSize',14);
 delete_box
 set(gcf,'Position',[  979   523   559   274]);
 
-saveas(gcf,fullfile(figPath,'SteerAngle.svg'),'svg');
+saveas(gcf,fullfile(figPath,'Fig1_SteerAngle.svg'),'svg');
 
 disp(['variance in steering angle is ' num2str(qVar)]);
