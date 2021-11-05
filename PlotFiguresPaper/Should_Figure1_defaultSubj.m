@@ -97,6 +97,7 @@ lw = 3;
 plot(tpelvis-t0,eulpelvis(:,1)*180/pi,'Color',CPelv,'LineWidth',lw); hold on;
 plot(ttorso-t0,eulTorso(:,1)*180/pi,'Color',CTors,'LineWidth',lw);
 plot(tframe-t0,eulframe(:,1)*180/pi,'Color',CFrame,'LineWidth',lw);
+set(gcf,'Position',[  979   523   559   274]);
 
 % relative angles
 % vline(t0-t0,'k');
@@ -155,12 +156,18 @@ set(gcf,'Position',[547   682   693   296]);
 saveas(gcf,fullfile(figPath,'Figure1_ROM.svg'),'svg');
 
 %% steering angle
-isel = find(Phases.SteerAngle.DualTask.t>t0 & Phases.SteerAngle.DualTask.t <tend);
 
 figure();
-plot(Phases.SteerAngle.DualTask.t(isel)-t0,Phases.SteerAngle.DualTask.qSteer(isel,1)*180/pi,'Color',CTors,'LineWidth',lw);
+isel = find(Phases.SteerAngle.DualTask.t>t0 & Phases.SteerAngle.DualTask.t <tend);
+plot(Phases.SteerAngle.DualTask.t-t0,Phases.SteerAngle.DualTask.qSteer(:,1)*180/pi,'Color',CTors,'LineWidth',lw);
 set(gca,'XLim',[0 4.8]);
-qVar = var(Phases.SteerAngle.DualTask.qSteer(isel,1)*180/pi);
+qVar = std(Phases.SteerAngle.DualTask.qSteer(isel,1)*180/pi);
+
+set(gca,'LineWidth',2);
+set(gca,'FontSize',14);
+delete_box
+set(gcf,'Position',[  979   523   559   274]);
+
 saveas(gcf,fullfile(figPath,'SteerAngle.svg'),'svg');
 
 disp(['variance in steering angle is ' num2str(qVar)]);
