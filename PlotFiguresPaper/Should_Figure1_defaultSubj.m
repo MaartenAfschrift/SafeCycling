@@ -3,8 +3,9 @@
 
 clear all; close all; clc;
 
-DataPath  = 'S:\Data\fietsproef\Data';
-FigPath = 'S:\Data\fietsproef\Data\Figures\ShoulderCheck';
+% DataPath  = 'S:\Data\fietsproef\Data';
+DataPath  = 'E:\fietsproef\Data';
+% FigPath = fullfile(DataPath,'Figures\ShoulderCheck');
 nPP = 81;
 Folders = {'Classic','EBike'};
 OrderMeas = {'normal','slow','DualTask','extra','extra2','extra3'};
@@ -24,8 +25,7 @@ BoolPlot2 = false; % individual plot for each subject with the input data to cop
 % tresholds
 threshold_drift = 0.3; % 0.3 radians in this task
 
-figPath = 'C:\Users\u0088756\Documents\Teaching\MasterThesis\Anouck_Theresa\Software\figs';
-figPathRaw = 'C:\Users\u0088756\Documents\Teaching\MasterThesis\Anouck_Theresa\Software\figs\tempFigs';
+figPath = fullfile(pwd,'FigsPaper');
 
 
 %% select subject
@@ -70,15 +70,8 @@ Q_TorsoPelvis = eulTorso_int -eulPelvis_int;
 % einde trial als R frame een bepaalde
 % hoek over gaat
 % get index turned
-t0 = ttorso(1) + 3;
-iTurned = find(eulframe(:,1) > 1,1,'first');
-if isempty(iTurned)
-    tend = ttorso(end); % just select end of file (indicates that trigger pulse was too early
-    disp(['possible error in file: ' filename ]);
-    BoolErrorFlag = 1;
-else
-    tend = ttorso(iTurned)-3; % 3 seconden hiervoor
-end
+t0 = Events.ShoulderCheck(1) - 0.5;
+tend = Events.ShoulderCheck(2) + 0.5;
 iSel = find(ttorso>t0 & ttorso<tend);
 [MinQ,iMin] = min(Q_TorsoFrame(iSel,1));
 [MaxQ,iMax] = max(Q_TorsoFrame(iSel,1));
@@ -101,9 +94,9 @@ lw = 3;
 
 
 % sensor orientations
-plot(tpelvis-t0,eulpelvis(:,1),'Color',CPelv,'LineWidth',lw); hold on;
-plot(ttorso-t0,eulTorso(:,1),'Color',CTors,'LineWidth',lw);
-plot(tframe-t0,eulframe(:,1),'Color',CFrame,'LineWidth',lw);
+plot(tpelvis-t0,eulpelvis(:,1)*180/pi,'Color',CPelv,'LineWidth',lw); hold on;
+plot(ttorso-t0,eulTorso(:,1)*180/pi,'Color',CTors,'LineWidth',lw);
+plot(tframe-t0,eulframe(:,1)*180/pi,'Color',CFrame,'LineWidth',lw);
 
 % relative angles
 % vline(t0-t0,'k');
@@ -113,44 +106,61 @@ plot(tframe-t0,eulframe(:,1),'Color',CFrame,'LineWidth',lw);
 set(gca,'LineWidth',2);
 set(gca,'FontSize',14);
 set(gca,'XLim',[0 4.8]);
-set(gca,'YLim',[-1 1.7]);
+% set(gca,'YLim',[-1 1.7]);
 
 delete_box
+saveas(gcf,fullfile(figPath,'Figure1_SensorOr.svg'),'svg');
+
 %% Figure relative sensor angles
 
 [CTorsoFrame, CTorsoPelvis, CPelvisFrame] = GetColorsJoints();
 
 figure();
-plot(tframe-t0,Q_TorsoFrame(:,1),'Color',CTorsoFrame,'LineWidth',lw); hold on;
-plot(tframe-t0,Q_PelvisFrame(:,1),'Color',CPelvisFrame,'LineWidth',lw); hold on;
-plot(tframe-t0,Q_TorsoPelvis(:,1),'Color',CTorsoPelvis,'LineWidth',lw); hold on;
+plot(tframe-t0,Q_TorsoFrame(:,1)*180/pi,'Color',CTorsoFrame,'LineWidth',lw); hold on;
+plot(tframe-t0,Q_PelvisFrame(:,1)*180/pi,'Color',CPelvisFrame,'LineWidth',lw); hold on;
+plot(tframe-t0,Q_TorsoPelvis(:,1)*180/pi,'Color',CTorsoPelvis,'LineWidth',lw); hold on;
 set(gca,'LineWidth',2);
 set(gca,'FontSize',14);
 set(gca,'XLim',[0 4.8]);
 % set(gca,'YLim',[-1 1.7]);
 set(gcf,'Position',[  979   523   559   274]);
 delete_box
-%%
+saveas(gcf,fullfile(figPath,'Figure1_SensorAngle.svg'),'svg');
+
+%% angular velocity sensor
 [CPelv, CTors, CFrame] = GetColorsSensorLocation();
 
 figure();
-plot(ttorso-t0,Phases.Trunk.DualTask.QdWorld(:,3),'Color',CTors,'LineWidth',lw); hold on;
-plot(tframe-t0,Phases.Frame.DualTask.QdWorld(:,3),'Color',CFrame,'LineWidth',lw);
-plot(tpelvis-t0,Phases.Pelvis.DualTask.QdWorld(:,3),'Color',CPelv,'LineWidth',lw);
+plot(ttorso-t0,Phases.Trunk.DualTask.QdWorld(:,3)*180/pi,'Color',CTors,'LineWidth',lw); hold on;
+plot(tframe-t0,Phases.Frame.DualTask.QdWorld(:,3)*180/pi,'Color',CFrame,'LineWidth',lw);
+plot(tpelvis-t0,Phases.Pelvis.DualTask.QdWorld(:,3)*180/pi,'Color',CPelv,'LineWidth',lw);
 set(gca,'LineWidth',2);
 set(gca,'FontSize',14);
 set(gca,'XLim',[0 4.8]);
 set(gcf,'Position',[  979   523   559   274]);
 delete_box
+saveas(gcf,fullfile(figPath,'Figure1_qd.svg'),'svg');
 
-%% 
+%% ROM
 figure();
-b = bar(1,ROM/180*pi); b.FaceColor = CTorsoFrame; hold on;
-b = bar(2,ROM2/180*pi); b.FaceColor = CPelvisFrame; hold on;
-b = bar(3,ROM3/180*pi); b.FaceColor = CTorsoPelvis; hold on;
+b = bar(1,ROM); b.FaceColor = CTorsoFrame; hold on;
+b = bar(2,ROM2); b.FaceColor = CPelvisFrame; hold on;
+b = bar(3,ROM3); b.FaceColor = CTorsoPelvis; hold on;
 set(gca,'LineWidth',2);
 set(gca,'FontSize',14);
 set(gca,'XTick',[]);
 delete_box
 set(gcf,'Position',[547   682   693   296]);
 % set(gca,'YLim',[-1 1.7]);
+saveas(gcf,fullfile(figPath,'Figure1_ROM.svg'),'svg');
+
+%% steering angle
+isel = find(Phases.SteerAngle.DualTask.t>t0 & Phases.SteerAngle.DualTask.t <tend);
+
+figure();
+plot(Phases.SteerAngle.DualTask.t(isel)-t0,Phases.SteerAngle.DualTask.qSteer(isel,1)*180/pi,'Color',CTors,'LineWidth',lw);
+set(gca,'XLim',[0 4.8]);
+qVar = var(Phases.SteerAngle.DualTask.qSteer(isel,1)*180/pi);
+saveas(gcf,fullfile(figPath,'SteerAngle.svg'),'svg');
+
+disp(['variance in steering angle is ' num2str(qVar)]);

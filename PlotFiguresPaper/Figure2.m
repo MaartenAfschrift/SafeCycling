@@ -3,7 +3,8 @@
 % Figure with IMU outcomes during cycling parcours
 
 
-Datapath = 'S:\Data\fietsproef\Data';
+% Datapath = 'S:\Data\fietsproef\Data';
+DataPath  = 'E:\fietsproef\Data';
 
 % Steering = load(fullfile(DataPath,'Outcomes','ShouldCheck_SteerAngle.mat'),'DataMatrix','header_DataMatrix');
 SensorOr = load(fullfile(DataPath,'Outcomes','ShouldCheckROM.mat'),'DataMatrix','header_DataMatrix');
