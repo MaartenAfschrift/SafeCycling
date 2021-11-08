@@ -1,37 +1,26 @@
 %% Figure 3
 
-% summary figure with results
+% path information
 
-% Figure with summary results sensor orienatations
+ExcelFile = 'C:\Users\u0088756\Documents\FWO\Data\fietsproject\opmerkingen proefpersonen.xlsx';
+DatFile = 'C:\Users\u0088756\Documents\FWO\Data\fietsproject\ShouldCheckROM.mat';
+figPath = fullfile(pwd,'FigsPaper');
 
-
-
-
-Datapath = 'S:\Data\fietsproef\Data';
-% 
-% Steering = load(fullfile(DataPath,'Outcomes','ShouldCheck_SteerAngle.mat'),'DataMatrix','header_DataMatrix');
-% SensorOr = load(fullfile(DataPath,'Outcomes','ShouldCheckROM.mat'),'DataMatrix','header_DataMatrix');
-
-
-% get the average angles
-DataMatrix = SensorOr.DataMatrix;
-iCol = [4 7 8];
-TitleSel = {'ROM Frame-C7','ROM Frame-Pelvis','ROM Pelvis-Trunk'};
-
-qSel =[110 150];
-% qSel = nan(3,2);
-% 
-% for i=1:3
-%     subplot(2,2,i+1);
-%     
-%     iSelY = DataMatrix(:,5) == 0 &  DataMatrix(:,3) == 1 & DataMatrix(:,2) == 1 & DataMatrix(:,6) == 0;
-%     qSel(i,nanmean(DataMatrix(iSelY,iCol(i))));
-%     
-%     iSelE = DataMatrix(:,5) == 1 &  DataMatrix(:,3) == 1 & DataMatrix(:,2) == 1 & DataMatrix(:,6) == 0;
-%     qSel(i,nanmean(DataMatrix(iSelE,iCol(i))));
-% end
-
-
+% read the excel file with quantitative information
+[ShoulderCheckInfo] = GetShoulderCheckInfo(ExcelFile);
 figure();
 
-plot([-1 0 1],[sind(-qSel(1,2)/2) 0 sind(qSel(1,2)/2)])
+subplot(1,2,1)
+pie([10 0 0 0 0]);
+
+subplot(1,2,2)
+Zadel = sum(ShoulderCheckInfo.DatOlder(:,1)==1 & ShoulderCheckInfo.DatOlder(:,3)~=1);
+Kegel = sum(ShoulderCheckInfo.DatOlder(:,2)==1 & ShoulderCheckInfo.DatOlder(:,3)~=1);
+Voet = sum(ShoulderCheckInfo.DatOlder(:,3)==1);
+BuitLijn = sum(ShoulderCheckInfo.DatOlder(:,4)==1 & ShoulderCheckInfo.DatOlder(:,3)~=1);
+AllesOK = sum(sum(ShoulderCheckInfo.DatOlder(:,1:4),2) == 0);
+pie([AllesOK BuitLijn Voet Kegel Zadel]);
+
+
+set(gcf,'Position',[634   360   794   360]);
+saveas(gcf,fullfile(figPath,'Figure3_pie.svg'),'svg');
