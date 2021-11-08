@@ -16,6 +16,10 @@ diary('Figure2_Log.txt');
 h = figure();
 set(h,'Position',[113   394   765   623]);
 
+CYoung = [0 0 1];
+CEld = [1 0 0];
+mk = 3;
+
 % plot figure
 DataMatrix = SensorOr.DataMatrix;
 subplot(2,2,1);
@@ -26,8 +30,16 @@ PlotBar(2,DataMatrix(iSelE,9),CEld,mk); hold on;
 set(gca,'XTick',1:2);
 set(gca,'XTickLabel',{'Young','Older'});
 
+% test normality
+[Wilk(1).HY, Wilk(1).pValueY, Wilk(1).WY] = swtest(DataMatrix(iSelY,9), 0.05);
+[Wilk(1).HE, Wilk(1).pValueE, Wilk(1).WE] = swtest(DataMatrix(iSelE,9), 0.05);
+
 %ttest ond data
-[pairedttest,p,ci,stats] = ttest2(DataMatrix(iSelY,9),DataMatrix(iSelE,9),0.05);
+if Wilk(1).HY == 0 && Wilk(1).HE ==0
+    [pairedttest,p,ci,stats] = ttest2(DataMatrix(iSelY,9),DataMatrix(iSelE,9),0.05);
+else
+    [p,h,stats] = ranksum(DataMatrix(iSelY,9),DataMatrix(iSelE,9),'alpha',0.05);
+end
 disp('steering angle ')
 disp(['number of young subjects ' , num2str(sum(~isnan(DataMatrix(iSelY,9))))]);
 disp(['number of older subjects ' , num2str(sum(~isnan(DataMatrix(iSelE,9))))]);
@@ -53,9 +65,13 @@ for i=1:3
     set(gca,'XTick',1:2);
     set(gca,'XTickLabel',{'Young','Older'});
     
-
-    
-    [pairedttest,p,ci,stats] = ttest2(DataMatrix(iSelY,iCol(i)),DataMatrix(iSelE,iCol(i)),0.05);
+    [Wilk(1+i).HY, Wilk(1+i).pValueY, Wilk(1+i).WY] = swtest(DataMatrix(iSelY,iCol(i)), 0.05);
+    [Wilk(1+i).HE, Wilk(1+i).pValueE, Wilk(1+i).WE] = swtest(DataMatrix(iSelE,iCol(i)), 0.05);
+    if Wilk(1+i).HY == 0 && Wilk(1+i).HE ==0    
+        [pairedttest,p,ci,stats] = ttest2(DataMatrix(iSelY,iCol(i)),DataMatrix(iSelE,iCol(i)),0.05);
+    else
+        [p,h,stats] = ranksum(DataMatrix(iSelY,iCol(i)),DataMatrix(iSelE,iCol(i)),'alpha',0.05);
+    end
     disp(TitleSel{i});
     disp(['number of young subjects ' , num2str(sum(~isnan(DataMatrix(iSelY,iCol(i)))))]);
     disp(['number of older subjects ' , num2str(sum(~isnan(DataMatrix(iSelE,iCol(i)))))]);
@@ -71,6 +87,6 @@ end
 delete_box
 
 % save the figure
-saveas(gcf,fullfile(figPath,'Figure2.svg'),'svg');
-saveas(gcf,fullfile(figPath,'Figure2.png'),'png');
-diary off
+% saveas(gcf,fullfile(figPath,'Figure2.svg'),'svg');
+% saveas(gcf,fullfile(figPath,'Figure2.png'),'png');
+% diary off

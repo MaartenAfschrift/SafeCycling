@@ -36,7 +36,7 @@ ShoulderCheckInfo.header = ShoulderCheckInfo.HeadersOlder;
 %% Get the Datamatrix
 if ComputeDataMatrix
     DataMatrix = nan(100*3*2,9); % pre allocat matrix with all the data
-    header_DataMatrix =  {'s-ID','bike-ID','Speed-ID','ROM-FrameTorso','BoolElderly','Error','ROM-FramePelvis','ROM-PelvisTorso','SteeringAngle'}; % header for the datamatrix
+    header_DataMatrix =  {'s-ID','bike-ID','Speed-ID','ROM-FrameTorso','BoolElderly','Error','ROM-FramePelvis','ROM-PelvisTorso','SteeringAngle','CorrSteerTorso'}; % header for the datamatrix
     diary('LogExample_ShoulderCheck.txt');
     ct = 1;
     for s = 1:nPP
@@ -149,6 +149,14 @@ if ComputeDataMatrix
                                         disp(['possible error in file: ' filename ' remove this file from the analysis']);
                                         qVarDeg = NaN;
                                     end
+                                    
+                                    % correlation between steering angle
+                                    % and orientation of the torso
+                                    eulTorso_intSteer = interp1(ttorso,eulTorso(:,1),Phases.SteerAngle.DualTask.t(iSelSteer))';
+                                    qSteer = q(iSelSteer,1);
+                                    rho = corr(eulTorso_intSteer,qSteer);
+                                   
+                                    
                                     if isfield(GUIvar,'Shoulder_Drift') && ~GUIvar.Shoulder_Drift && ~BoolPelvisError
                                         [MinQ2,iMin] = nanmin(Q_PelvisFrame(iSel,1));
                                         [MaxQ2,iMax] = nanmax(Q_PelvisFrame(iSel,1));
@@ -165,6 +173,7 @@ if ComputeDataMatrix
                                     ROM2 = NaN;
                                     ROM3 = NaN;
                                     qVarDeg = NaN;
+                                    rho = NaN;
                                 end
                                 % store the ROM in the datamatrix
                                 DataMatrix(ct,1) = s;
@@ -176,6 +185,7 @@ if ComputeDataMatrix
                                 DataMatrix(ct,7) = ROM2;
                                 DataMatrix(ct,8) = ROM3;
                                 DataMatrix(ct,9) = qVarDeg;
+                                DataMatrix(ct,10) = rho;
                                 ct = ct+1;
                             end
                         end
