@@ -4,7 +4,7 @@
 clear all; close all; clc;
 
 DataPath  = 'E:\fietsproef\Data';
-FigPath = 'E:\fietsproef\Data\Figures\ShoulderCheck';
+FigPath = 'E:\fietsproef\Data\Figures\Slalom';
 addpath 'C:\Users\r0721298\Documents\software\SafeCycling\Functions'
 nPP = 81;
 %Folders = {'Classic'};
@@ -29,11 +29,11 @@ figPath = 'E:\fietsproef\Data\ResultsFig\ShoulderCheck\ROM';
 
 datapath = 'E:\fietsproef\';
 FileYoung = fullfile(datapath,'opmerkingen proefpersonen.xlsx');
-[ShoulderCheckInfo] = GetShoulderCheckInfo(FileYoung);
+[SlalomInfo] = GetSlalomInfo(FileYoung);
 
-ShoulderCheckInfo.pp = [ShoulderCheckInfo.ppIDYoung; ShoulderCheckInfo.ppIDOld];
-ShoulderCheckInfo.data = [ShoulderCheckInfo.DatYoung; ShoulderCheckInfo.DatOlder];
-ShoulderCheckInfo.header = ShoulderCheckInfo.HeadersOlder;
+SlalomInfo.pp = [SlalomInfo.ppIDYoung; SlalomInfo.ppIDOld];
+SlalomInfo.data = [SlalomInfo.DatYoung; SlalomInfo.DatOlder];
+SlalomInfo.header = SlalomInfo.HeadersOlder;
 
 
 %% Get the Datamatrix
@@ -71,24 +71,26 @@ if ComputeDataMatrix
                             % get the euler angles
                             % check if task was performed according to
                             % instructions
-                            iData = find(ShoulderCheckInfo.pp== s);
+                            iData = find(SlalomInfo.pp== s);
                             if strcmp(Folders{f},'Classic')
                                 if strcmp(OrderMeas{i},'normal')
-                                    headerSel = {'KEGEL NIET GEZIEN-normal-classic',...
+                                    headerSel = {'KEGEL NIET-normal-classic',...
+                                        'KEGEL OMVER-normal-classic', ...
                                         'VOET GROND-normal-classic'};
                                 end
                             elseif strcmp(Folders{f},'EBike')
                                 if strcmp(OrderMeas{i},'normal')
-                                    headerSel = {'KEGEL NIET GEZIEN-normal-ebike',...
+                                    headerSel = {'KEGEL NIET-normal-ebike',...
+                                        'KEGEL OMVER-normal-ebike', ...
                                         'VOET GROND-normal-ebike'};
                                 end
                             end
                             % select colIndices
                             IndsColInfo = nan(length(headerSel),1);
                             for ic=1:length(headerSel)
-                                IndsColInfo(ic) = find(strcmp(ShoulderCheckInfo.header,headerSel{ic}));
+                                IndsColInfo(ic) = find(strcmp(SlalomInfo.header,headerSel{ic}));
                             end
-                            DatSel = ShoulderCheckInfo.data(iData,IndsColInfo);
+                            DatSel = SlalomInfo.data(iData,IndsColInfo);
                             if sum(DatSel) == 0
                                 % we don't use the first 3 and last 5 seconds in the
                                 % movement

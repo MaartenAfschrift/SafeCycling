@@ -1,6 +1,3 @@
-
-
-
 %% Settings
 close all; clc;
 % settings for figure (you can adjust these positions if you want)
@@ -10,12 +7,12 @@ PosFigure = [146         102        1571         876];
 Bool_ReAnalyse = false;
 
 % Path information
-DataPath  = 'S:\Data\fietsproef\Data\MatData';
+DataPath  = 'E:\fietsproef\Data\MatData';
 addpath(genpath('C:\Users\r0721298\Documents\software\SafeCycling'));
 nPP = 81;
 Folders = {'Classic','EBike'};
 % OrderMeas = {'normal','slow','DualTask','extra','extra2','extra3'};
-OrderMeas = {'normal'};
+OrderMeas = {'slow'};
 %% Cleaning up trigger pulses
 
 % get reported error in trigger pulses
@@ -51,8 +48,8 @@ for s = 1:nPP
                 if ~isempty(GUIvar) && isfield(GUIvar,'slalom_Drift')
                     BoolDrift = GUIvar.slalom_Drift;
                 end
-                if ~isempty(GUIvar) && isfield(GUIvar,'Slalom_errorFlag')
-                    errorFlag = GUIvar.Slalom_errorFlag;
+                if ~isempty(GUIvar) && isfield(GUIvar,'slalom_errorFlag')
+                    errorFlag = GUIvar.slalom_errorFlag;
                 end
                 
                 if (~BoolAnalyzed && ~errorFlag) || Bool_ReAnalyse

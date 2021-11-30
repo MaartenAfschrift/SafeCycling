@@ -7,7 +7,7 @@ close all; clc;
 PosFigure = [504         277        1535         852];
 
 % Boolean to select if you want to re-analyse the data
-Bool_ReAnalyse = false;
+Bool_ReAnalyse = true;
 
 % Path information
 DataPath  = 'E:\fietsproef\Data\MatData';
@@ -15,7 +15,7 @@ addpath(genpath('C:\Users\r0721298\Documents\software\SafeCycling'));
 nPP = 81;
 Folders = {'Classic','EBike'};
 % OrderMeas = {'normal','slow','DualTask','extra','extra2','extra3'};
-OrderMeas = {'normal'};
+OrderMeas = {'slow'};
 %% Cleaning up trigger pulses
 
 % get reported error in trigger pulses

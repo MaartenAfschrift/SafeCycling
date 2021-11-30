@@ -3,11 +3,13 @@
 
 clear all; close all; clc;
 
-DataPath  = 'E:\Data\Fietsproef';
-FigPath = 'E:\Data\Fietsproef\Figures\HingeSteer';
+DataPath  = 'E:\fietsproef\Data\';
+FigPath = 'E:\fietsproef\Figures\HingeSteer';
 nPP = 81;
 Folders = {'Classic','EBike'};
-OrderMeas = {'normal','slow','DualTask','extra','extra2','extra3'};
+%Folders = {'Classic'}; % voor proefpersoon 61 normal maakt die gaan data aan want gaat voorbij een kegel
+%OrderMeas = {'normal'};
+OrderMeas = {'normal','slow'};
 SensorLocation  = {'Steer','Frame','Trunk','KneeL','KneeR','Pelvis'};
 
 % here we want to compute the variation in steer angle during the "narrow
@@ -15,8 +17,9 @@ SensorLocation  = {'Steer','Frame','Trunk','KneeL','KneeR','Pelvis'};
 ParcousSelected = 'slalom';
 
 % load the info of the folders
-load(fullfile(DataPath,'RawData','ppInfo.mat'),'ppYoung','ppEld');
-
+%load(fullfile(DataPath,'RawData','ppInfo.mat'),'ppYoung','ppEld'); dit heb
+%ik veranderd naar MatData
+load(fullfile(DataPath,'MatData','ppInfo.mat'),'ppYoung','ppEld');
 
 % flow control
 ComputeDataMatrix = true; % Run part to compute datamatrix (or load saved .mat file)
@@ -26,14 +29,27 @@ BoolPlot2 = false; % individual plot for each subject with the input data to cop
 qd_threshold = 99; % 0.3 % radians/s for steady state biking after slalom (i.e. before start turn towards obstacle part)
 threshold_drift = 0.3; % 0.3 radians in this task
 
-%% Get the Datamatrix
+% Read the excel table with information on the task
+
+datapath = 'E:\fietsproef\';
+FileYoung = fullfile(datapath,'opmerkingen proefpersonen.xlsx');
+[SlalomInfo] = GetSlalomInfo(FileYoung);
+
+SlalomInfo.pp = [SlalomInfo.ppIDYoung; SlalomInfo.ppIDOld];
+SlalomInfo.data = [SlalomInfo.DatYoung; SlalomInfo.DatOlder];
+SlalomInfo.header = SlalomInfo.HeadersOlder;
+
+
+% Get the Datamatrix
 if ComputeDataMatrix
     DataMatrix = nan(100*3*2,6); % pre allocat matrix with all the data
     header_DataMatrix =  {'s-ID','bike-ID','Speed-ID','VarSteerAngle','BoolElderly','Error'}; % header for the datamatrix
-    diary('LogExample_NarrowLane.txt');
+    diary('LogExample_Slalom.txt');
     
     ct = 1;
-    for s = 1:nPP
+    figure();
+    for s = 1:10
+        
         ppPath = ['pp_' num2str(s)];
         %   h1 = figure();
         
@@ -50,7 +66,7 @@ if ComputeDataMatrix
         
         
         for f = 1:length(Folders)
-            for i =1:3
+            for i =1:length(OrderMeas)
                 % load the data
                 OutName = [OrderMeas{i} '_data.mat'];
                 OutPathMat = fullfile(DataPath,'MatData',ppPath,Folders{f});
@@ -63,132 +79,239 @@ if ComputeDataMatrix
                     %                 else
                     %                     BoolPhases = false;
                     %                 end
-                    load(filename,'Phases','header');
+                    load(filename,'Phases','header','Events');
                     
                     if exist('Phases','var')
                         BoolErrorFlag = 0;
                         % get the variance in steer angle
                         if isfield(Phases,'SteerAngle') && ~isempty(Phases.SteerAngle.slalom.t)
-                            q = Phases.SteerAngle.slalom.qSteer(:,1); % steer angle aroud x-axis
-                            t = Phases.SteerAngle.slalom.t;
-                            
-                            % we want all the data before the subject turn towards the
-                            % slalom track. We can easility identify this based on the
-                            % movement direction. You can find the orientation of the
-                            % frame in the world (in euler angles) in the field eul.
-                            % the orientation around the x-axis shows if the frame is
-                            % facing in the "forward" or "backward" direction.
-                            eul = Phases.Frame.slalom.eul;
-                            teul = Phases.Frame.slalom.t;
-                            
-                            % also interpret this based on the angular
-                            % velocity of the frame in the world
-                            tqd = Phases.Frame.slalom.t;
-                            qd = Phases.Frame.slalom.QdWorld;
-                            
-                            %                             % we will have to adapt the euler angles to
-                            %                             % have a proper interpretation
-                            %                             %%
-                            %                             R0 = Phases.Trunk.CallPerson.R(:,:,end);
-                            %                             nfr = length(tqd);
-                            %                             R = Phases.Frame.slalom.R;
-                            %                             Rrel = nan(3,3,nfr);
-                            %                             for ifr = 1:nfr
-                            %                                 Rrel(:,:,ifr) =  R(:,:,ifr)*R0';
-                            %                             end
-                            %                             eulRel = rotm2eul(Rrel);
-                            %                             figure(); plot(eulRel); legend('x','y','z')
-                            %                             %%
-                            %
-                            % get index turned
-                            eulAbs = abs(eul);
-                            iTurned = find(eul(:,1) < 0,1,'last');
-                            %                             figure(); plot(teul,abs(eul)); vline(teul(iTurned));
-                            t0 = teul(1);
-                            if isempty(iTurned)
-                                tend = teul(end); % just select end of file (indicates that trigger pulse was too early
-                                disp(['possible error in file: ' filename ]);
-                                BoolErrorFlag = 1;
-                            else
-                                % find last time the time derivative of the orientation is
-                                % is positive before iTurned                                
-                                iBeforeTurn = 1:iTurned;
-                                iLastNoTurn = find(abs(qd(iBeforeTurn,3))<qd_threshold,1,'last');
-                                tend = teul(iLastNoTurn);
+                            % toegevoegd door lissa
+                            % check if the task was performed according to
+                            % instructions
+                            iData = find(SlalomInfo.pp== s);
+                            if strcmp(Folders{f},'Classic')
+                                if strcmp(OrderMeas{i},'normal')
+                                    headerSel = {'KEGEL NIET-normal-classic',...
+                                        'KEGEL OMVER-normal-classic', ...
+                                        'VOET GROND-normal-classic'};
+                                end
+                            elseif strcmp(Folders{f},'EBike')
+                                if strcmp(OrderMeas{i},'normal')
+                                    headerSel = {'KEGEL NIET-normal-ebike',...
+                                        'KEGEL OMVER-normal-ebike', ...
+                                        'VOET GROND-normal-ebike'};
+                                end
                             end
-                            % just select end of file (indicates that trigger pulse was too early
-                            if isempty(tend)
-                                tend = teul(end);
-                                BoolErrorFlag = 1;
-                                disp(['possible error in file: ' filename ])
+                            % select colIndices
+                            IndsColInfo = nan(length(headerSel),1);
+                            for ic=1:length(headerSel)
+                                IndsColInfo(ic) = find(strcmp(SlalomInfo.header,headerSel{ic})); % juiste kolom selecteren: bv staat in 9/10/12
                             end
-                            
-                            % evaluate if there is drift in the sensor
-                            % test if there is drift on the sensors
-                            [tnarrow,qnarrow] = GetSteerAngleNarrowLane(Phases);
-                            qav_3s_t0 = nanmean(qnarrow(tnarrow<tnarrow(1)+3));
-                            qav_3s_end = nanmean(qnarrow(tnarrow>tnarrow(end)-3));
-                            drift = abs(qav_3s_end-qav_3s_t0);
-                            if drift > threshold_drift
-                                BoolErrorFlag = 1;
-                                disp(['most likely drift in : ' filename ' reported as an error' ])
+                            DatSel = SlalomInfo.data(iData,IndsColInfo);
+                            if sum(DatSel) == 0 % als ze nul scoren op de instructies, dan mogen we de data gebruiken
+                                
+                                q = Phases.SteerAngle.slalom.qSteer(:,1); % steer angle around x-axis
+                                t = Phases.SteerAngle.slalom.t;
+                                
+                                % we want all the data before the subject turn towards the
+                                % slalom track. We can easility identify this based on the
+                                % movement direction. You can find the orientation of the
+                                % frame in the world (in euler angles) in the field eul.
+                                % the orientation around the x-axis shows if the frame is
+                                % facing in the "forward" or "backward" direction.
+                                eul = Phases.Frame.slalom.eul;
+                                teul = Phases.Frame.slalom.t;
+                                
+                                % also interpret this based on the angular
+                                % velocity of the frame in the world
+                                tqd = Phases.Frame.slalom.t;
+                                qd = Phases.Frame.slalom.QdWorld;
+                                
+                                %                             % we will have to adapt the euler angles to
+                                %                             % have a proper interpretation
+                                %                             %%
+                                %                             R0 = Phases.Trunk.CallPerson.R(:,:,end);
+                                %                             nfr = length(tqd);
+                                %                             R = Phases.Frame.slalom.R;
+                                %                             Rrel = nan(3,3,nfr);
+                                %                             for ifr = 1:nfr
+                                %                                 Rrel(:,:,ifr) =  R(:,:,ifr)*R0';
+                                %                             end
+                                %                             eulRel = rotm2eul(Rrel);
+                                %                             figure(); plot(eulRel); legend('x','y','z')
+                                %                             %%
+                                %
+                                % get index turned
+                                eulAbs = abs(eul);
+                                iTurned = find(eul(:,1) < 0,1,'last');
+                                %                             figure(); plot(teul,abs(eul)); vline(teul(iTurned));
+                                % t0 = teul(1); weggelaten door lissa ...
+                                % toegevoegd door LISSA
+                                if (isfield(Events,'slalom') && ~isempty(Events.slalom) && ~any(isnan(Events.slalom)))
+                                    t0 = Events.slalom(1) - 0.5;
+                                    tend = Events.slalom(2) + 0.5;
+                                    iSel = t>=t0 & t<=tend;
+                                    
+                                    
+                                    if isempty(iTurned)
+                                        tend = teul(end); % just select end of file (indicates that trigger pulse was too early
+                                        disp(['possible error in file: ' filename ]);
+                                        BoolErrorFlag = 1;
+                                    else
+                                        % find last time the time derivative of the orientation is
+                                        % is positive before iTurned
+                                        iBeforeTurn = 1:iTurned;
+                                        iLastNoTurn = find(abs(qd(iBeforeTurn,3))<qd_threshold,1,'last');
+                                        tend = teul(iLastNoTurn);
+                                    end
+                                    % just select end of file (indicates that trigger pulse was too early
+                                    if isempty(tend)
+                                        tend = teul(end);
+                                        BoolErrorFlag = 1;
+                                        disp(['possible error in file: ' filename ])
+                                    end
+                                    
+                                    % evaluate if there is drift in the sensor
+                                    % test if there is drift on the sensors
+                                    [tnarrow,qnarrow] = GetSteerAngleNarrowLane(Phases);
+                                    qav_3s_t0 = nanmean(qnarrow(tnarrow<tnarrow(1)+3));
+                                    qav_3s_end = nanmean(qnarrow(tnarrow>tnarrow(end)-3));
+                                    drift = abs(qav_3s_end-qav_3s_t0);
+                                    if drift > threshold_drift
+                                        BoolErrorFlag = 1;
+                                        disp(['most likely drift in : ' filename ' reported as an error' ])
+                                    end
+                                    
+                                    % select indices
+                                    %iSel = t>=t0 & t<=tend; % indices between
+                                    %start and end %weggelaten door LISSA want
+                                    %staat al op deze regel iSel = find(t>t0 & t<tend);
+                                    qsel = q(iSel); % angle selected in time frame
+                                    tsel = t(iSel); % time vector selected
+                                    
+                                    % compute the variance in steering angle
+                                    qVar = var(qsel);
+                                    qVarDeg = qVar*180/pi;
+                                    
+                                    % store the variance in an array
+                                    DataMatrix(ct,1) = s;
+                                    DataMatrix(ct,2) = f;
+                                    DataMatrix(ct,3) = i;
+                                    DataMatrix(ct,4) = qVarDeg;
+                                    DataMatrix(ct,5) = BoolEld;
+                                    DataMatrix(ct,6) = BoolErrorFlag;
+                                    
+                                    ct = ct+1; % counter to fill row of DataMatrix
+                                    % you can the selected steering angle by uncommenting this
+                                    % code (also uncomment h2 = figure() before start for loop over f
+                                    if BoolPlot2
+                                        figure(h2);
+                                        subplot(2,3,(f-1)*3 + i);
+                                        plot(t,q); hold on;
+                                        plot(tsel,qsel,'--r');
+                                        xlabel('Time [s]');
+                                        ylabel('Steer angle [rad]');
+                                        title([Folders{f} ' ' ppPath]);
+                                    end
+                                    
+                                    % you can visualise the detection of the "small" part using
+                                    % this code (also uncomment h1 = figure() before start for loop over f
+                                    %                 figure(h1);
+                                    %                 subplot(2,3,(f-1)*3 + i);
+                                    %                 plot(teul,eul);
+                                    %                 vline(tsel(end));
+                                    %                 legend('x','y','z');
+                                    %                 title(Folders{f});
+                                    %                 xlabel('Time [s]');
+                                    %                 xlabel('orientation in world [rad]');
+                                end
+                                % Visual comparison of variance in steer angle
+                                
+                                % Tip: I would always use the same colors for all graphs in your thesis. So
+                                % pick them carefully :).
+                                CYoung = [91 91 213]./255;%  color for young (see https://www.rapidtables.com/web/color/RGB_Color.html)
+                                CEld = [179 77 40]./255; % color for elderly (see https://www.rapidtables.com/web/color/RGB_Color.html)
+                                mk  = 3;
+                                
+                                %figure();
+                                subplot(1,2,1)
+                                % note fore now without errors possible DataMatrix(:,6) == 0
+                                % normal bike - normal speed  [young Old]
+                                iSel = DataMatrix(:,5) == 0 &  DataMatrix(:,3) == 1 & DataMatrix(:,2) == 1 & DataMatrix(:,6) == 0; % kolom 5 voor BoolEld dus young, kolom 3 voor speed dus normal, kolom 6 voor BoolErrorFlag dus geen error
+                                PlotBar(1,DataMatrix(iSel,4),CYoung,mk); hold on;
+                                iSel = DataMatrix(:,5) == 1 &  DataMatrix(:,3) == 1 & DataMatrix(:,2) == 1& DataMatrix(:,6) == 0; %
+                                PlotBar(2,DataMatrix(iSel,4),CEld,mk); hold on; % kolom 4 dus qVarDeg plotten!!!
+                                
+                                % normal bike - slow speed - [young old
+                                iSel = DataMatrix(:,5) == 0 &  DataMatrix(:,3) == 2 & DataMatrix(:,2) == 1& DataMatrix(:,6) == 0; %
+                                PlotBar(4,DataMatrix(iSel,4),CYoung,mk); hold on;
+                                iSel = DataMatrix(:,5) == 1 &  DataMatrix(:,3) == 2 & DataMatrix(:,2) == 1& DataMatrix(:,6) == 0; %
+                                PlotBar(5,DataMatrix(iSel,4),CEld,mk); hold on; %
+                                
+                                %     % normal bike - dual task - [young old]
+                                %     iSel = DataMatrix(:,5) == 0 &  DataMatrix(:,3) == 3 & DataMatrix(:,2) == 1& DataMatrix(:,6) == 0;
+                                %     PlotBar(7,DataMatrix(iSel,4),CYoung,mk); hold on;
+                                %     iSel = DataMatrix(:,5) == 1 &  DataMatrix(:,3) == 3 & DataMatrix(:,2) == 1& DataMatrix(:,6) == 0;
+                                %     PlotBar(8,DataMatrix(iSel,4),CEld,mk); hold on;
+                                
+                                ylabel('Variance steering angle [deg]');
+                                set(gca,'XTick',[1.5 4.5 7.5]);
+                                set(gca,'XTickLabel',{'Normal','Slow'});
+                                title('Normal Bike');
+                                set(gca,'YLim',[0 20]); % adapt this based on maxiaml values (make sure you don't exclude datapoints)
+                                set(gca,'Box','off')
+                                set(gca,'FontSize',10);
+                                set(gca,'LineWidth',1);
+                                
+                                subplot(1,2,2)
+                                % note fore now without errors possible DataMatrix(:,6) == 0
+                                % normal bike - normal speed  [young Old]
+                                iSel = DataMatrix(:,5) == 0 &  DataMatrix(:,3) == 1 & DataMatrix(:,2) == 2 & DataMatrix(:,6) == 0;
+                                PlotBar(1,DataMatrix(iSel,4),CYoung,mk); hold on;
+                                iSel = DataMatrix(:,5) == 1 &  DataMatrix(:,3) == 1 & DataMatrix(:,2) == 1 & DataMatrix(:,6) == 0;
+                                PlotBar(2,DataMatrix(iSel,4),CEld,mk); hold on;
+                                
+                                % normal bike - slow speed - [young old
+                                iSel = DataMatrix(:,5) == 0 &  DataMatrix(:,3) == 2 & DataMatrix(:,2) == 2 & DataMatrix(:,6) == 0;
+                                PlotBar(4,DataMatrix(iSel,4),CYoung,mk); hold on;
+                                iSel = DataMatrix(:,5) == 1 &  DataMatrix(:,3) == 2 & DataMatrix(:,2) == 2 & DataMatrix(:,6) == 0;
+                                PlotBar(5,DataMatrix(iSel,4),CEld,mk); hold on;
+                                
+                                % normal bike - dual task - [young old]
+                                iSel = DataMatrix(:,5) == 0 &  DataMatrix(:,3) == 3 & DataMatrix(:,2) == 2 & DataMatrix(:,6) == 0;
+                                PlotBar(7,DataMatrix(iSel,4),CYoung,mk); hold on;
+                                iSel = DataMatrix(:,5) == 1 &  DataMatrix(:,3) == 3 & DataMatrix(:,2) == 2 & DataMatrix(:,6) == 0;
+                                PlotBar(8,DataMatrix(iSel,4),CEld,mk); hold on;
+                                
+                                set(gca,'XTick',[1.5 4.5 7.5]);
+                                set(gca,'XTickLabel',{'Normal','Slow'});
+                                title('E-Bike');
+                                set(gca,'YLim',[0 20]);% adapt this based on maxiaml values (make sure you don't exclude datapoints)
+                                set(gca,'Box','off');
+                                legend('Young','Old');
+                                ax = gca;
+                                l1 = ax.Children(4);
+                                l2 = ax.Children(2);
+                                legend([l1 l2],{'Young','Old'});
+                                set(gca,'FontSize',10);
+                                set(gca,'LineWidth',1);
                             end
-                            
-                            % selecte indices
-                            iSel = t>=t0 & t<=tend; % indices between start and end
-                            qsel = q(iSel); % angle selected in time frame
-                            tsel = t(iSel); % time vector selected
-                            
-                            % compute the variance in steering angle
-                            qVar = var(qsel);
-                            qVarDeg = qVar*180/pi;
-                            
-                            % store the variance in an array
-                            DataMatrix(ct,1) = s;
-                            DataMatrix(ct,2) = f;
-                            DataMatrix(ct,3) = i;
-                            DataMatrix(ct,4) = qVarDeg;
-                            DataMatrix(ct,5) = BoolEld;
-                            DataMatrix(ct,6) = BoolErrorFlag;
-                            
-                            ct = ct+1; % counter to fill row of DataMatrix
-                            % you can the selected steering angle by uncommenting this
-                            % code (also uncomment h2 = figure() before start for loop over f
-                            if BoolPlot2
-                                figure(h2);
-                                subplot(2,3,(f-1)*3 + i);
-                                plot(t,q); hold on;
-                                plot(tsel,qsel,'--r');
-                                xlabel('Time [s]');
-                                ylabel('Steer angle [rad]');
-                                title([Folders{f} ' ' ppPath]);
-                            end
-                            
-                            % you can visualise the detection of the "small" part using
-                            % this code (also uncomment h1 = figure() before start for loop over f
-                            %                 figure(h1);
-                            %                 subplot(2,3,(f-1)*3 + i);
-                            %                 plot(teul,eul);
-                            %                 vline(tsel(end));
-                            %                 legend('x','y','z');
-                            %                 title(Folders{f});
-                            %                 xlabel('Time [s]');
-                            %                 xlabel('orientation in world [rad]');
                         end
                     end
                 end
             end
+            disp(['Subject ' num2str(s) ' / ' num2str(nPP)]);
         end
-        disp(['Subject ' num2str(s) ' / ' num2str(nPP)]);
+        % save the datamatrix
+        if ~isfolder(fullfile(DataPath,'Outcomes'))
+            mkdir(fullfile(DataPath,'Outcomes'));
+            Dualk
+            save(fullfile(DataPath,'Outcomes','SlalomSteerAngle.mat'),'DataMatrix','header_DataMatrix');
+            diary off
+        else
+            load(fullfile(DataPath,'Outcomes','SlalomSteerAngle.mat'),'DataMatrix','header_DataMatrix');
+        end
     end
-    % save the datamatrix
-    if ~isfolder(fullfile(DataPath,'Outcomes'))
-        mkdir(fullfile(DataPath,'Outcomes'));
-    end
-    save(fullfile(DataPath,'Outcomes','SlalomSteerAngle.mat'),'DataMatrix','header_DataMatrix');
-    diary off
-else
-    load(fullfile(DataPath,'Outcomes','SlalomSteerAngle.mat'),'DataMatrix','header_DataMatrix');
 end
 
 %% Detect some outliers
@@ -226,22 +349,22 @@ figure();
 subplot(1,2,1)
 % note fore now without errors possible DataMatrix(:,6) == 0
 % normal bike - normal speed  [young Old]
-iSel = DataMatrix(:,5) == 0 &  DataMatrix(:,3) == 1 & DataMatrix(:,2) == 1 & DataMatrix(:,6) == 0;
+iSel = DataMatrix(:,5) == 0 &  DataMatrix(:,3) == 1 & DataMatrix(:,2) == 1 & DataMatrix(:,6) == 0; % kolom 5 voor BoolEld dus young, kolom 3 voor speed dus normal, kolom 6 voor BoolErrorFlag dus geen error
 PlotBar(1,DataMatrix(iSel,4),CYoung,mk); hold on;
-iSel = DataMatrix(:,5) == 1 &  DataMatrix(:,3) == 1 & DataMatrix(:,2) == 1& DataMatrix(:,6) == 0;
-PlotBar(2,DataMatrix(iSel,4),CEld,mk); hold on;
+iSel = DataMatrix(:,5) == 1 &  DataMatrix(:,3) == 1 & DataMatrix(:,2) == 1& DataMatrix(:,6) == 0; %
+PlotBar(2,DataMatrix(iSel,4),CEld,mk); hold on; % kolom 4 dus qVarDeg plotten!!!
 
 % normal bike - slow speed - [young old
-iSel = DataMatrix(:,5) == 0 &  DataMatrix(:,3) == 2 & DataMatrix(:,2) == 1& DataMatrix(:,6) == 0;
+iSel = DataMatrix(:,5) == 0 &  DataMatrix(:,3) == 2 & DataMatrix(:,2) == 1& DataMatrix(:,6) == 0; %
 PlotBar(4,DataMatrix(iSel,4),CYoung,mk); hold on;
-iSel = DataMatrix(:,5) == 1 &  DataMatrix(:,3) == 2 & DataMatrix(:,2) == 1& DataMatrix(:,6) == 0;
-PlotBar(5,DataMatrix(iSel,4),CEld,mk); hold on;
+iSel = DataMatrix(:,5) == 1 &  DataMatrix(:,3) == 2 & DataMatrix(:,2) == 1& DataMatrix(:,6) == 0; %
+PlotBar(5,DataMatrix(iSel,4),CEld,mk); hold on; %
 
-% normal bike - dual task - [young old]
-iSel = DataMatrix(:,5) == 0 &  DataMatrix(:,3) == 3 & DataMatrix(:,2) == 1& DataMatrix(:,6) == 0;
-PlotBar(7,DataMatrix(iSel,4),CYoung,mk); hold on;
-iSel = DataMatrix(:,5) == 1 &  DataMatrix(:,3) == 3 & DataMatrix(:,2) == 1& DataMatrix(:,6) == 0;
-PlotBar(8,DataMatrix(iSel,4),CEld,mk); hold on;
+%     % normal bike - dual task - [young old]
+%     iSel = DataMatrix(:,5) == 0 &  DataMatrix(:,3) == 3 & DataMatrix(:,2) == 1& DataMatrix(:,6) == 0;
+%     PlotBar(7,DataMatrix(iSel,4),CYoung,mk); hold on;
+%     iSel = DataMatrix(:,5) == 1 &  DataMatrix(:,3) == 3 & DataMatrix(:,2) == 1& DataMatrix(:,6) == 0;
+%     PlotBar(8,DataMatrix(iSel,4),CEld,mk); hold on;
 
 ylabel('Variance steering angle [deg]');
 set(gca,'XTick',[1.5 4.5 7.5]);
