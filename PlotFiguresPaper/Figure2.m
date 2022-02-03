@@ -2,9 +2,11 @@
 
 % Figure with IMU outcomes during cycling parcours
 
-
+clear all; close all; clc;
 % Datapath = 'S:\Data\fietsproef\Data';
-DataPath  = 'E:\fietsproef\Data';
+% DataPath  = 'E:\fietsproef\Data';
+DataPath = 'E:\Data\Fietsproef';
+% DataPath = 'S:\Data\fietsproef\Data';
 
 % Steering = load(fullfile(DataPath,'Outcomes','ShouldCheck_SteerAngle.mat'),'DataMatrix','header_DataMatrix');
 SensorOr = load(fullfile(DataPath,'Outcomes','ShouldCheckROM.mat'),'DataMatrix','header_DataMatrix');
@@ -35,11 +37,12 @@ set(gca,'XTickLabel',{'Young','Older'});
 [Wilk(1).HE, Wilk(1).pValueE, Wilk(1).WE] = swtest(DataMatrix(iSelE,9), 0.05);
 
 %ttest ond data
-if Wilk(1).HY == 0 && Wilk(1).HE ==0
+% if Wilk(1).HY == 0 && Wilk(1).HE ==0
     [pairedttest,p,ci,stats] = ttest2(DataMatrix(iSelY,9),DataMatrix(iSelE,9),0.05);
-else
-    [p,h,stats] = ranksum(DataMatrix(iSelY,9),DataMatrix(iSelE,9),'alpha',0.05);
-end
+% else
+%     [p,h,stats] = ranksum(DataMatrix(iSelY,9),DataMatrix(iSelE,9),'alpha',0.05);
+% end
+disp(['t(' num2str(stats.df) ') = ' num2str(stats.tstat) ' , p = ' num2str(p)])
 disp('steering angle ')
 disp(['number of young subjects ' , num2str(sum(~isnan(DataMatrix(iSelY,9))))]);
 disp(['number of older subjects ' , num2str(sum(~isnan(DataMatrix(iSelE,9))))]);
@@ -67,16 +70,21 @@ for i=1:3
     
     [Wilk(1+i).HY, Wilk(1+i).pValueY, Wilk(1+i).WY] = swtest(DataMatrix(iSelY,iCol(i)), 0.05);
     [Wilk(1+i).HE, Wilk(1+i).pValueE, Wilk(1+i).WE] = swtest(DataMatrix(iSelE,iCol(i)), 0.05);
-    if Wilk(1+i).HY == 0 && Wilk(1+i).HE ==0    
+%     if Wilk(1+i).HY == 0 && Wilk(1+i).HE ==0    
         [pairedttest,p,ci,stats] = ttest2(DataMatrix(iSelY,iCol(i)),DataMatrix(iSelE,iCol(i)),0.05);
-    else
-        [p,h,stats] = ranksum(DataMatrix(iSelY,iCol(i)),DataMatrix(iSelE,iCol(i)),'alpha',0.05);
-    end
+%     else
+%         [p,h,stats] = ranksum(DataMatrix(iSelY,iCol(i)),DataMatrix(iSelE,iCol(i)),'alpha',0.05);
+%     end
     disp(TitleSel{i});
     disp(['number of young subjects ' , num2str(sum(~isnan(DataMatrix(iSelY,iCol(i)))))]);
     disp(['number of older subjects ' , num2str(sum(~isnan(DataMatrix(iSelE,iCol(i)))))]);
     disp(' ');
     title([TitleSel{i} ': p = ' num2str(p)]);
+    
+%     if Wilk(1+i).HY == 0 && Wilk(1+i).HE ==0    
+        disp(['t(' num2str(stats.df) ') = ' num2str(stats.tstat) ' , p = ' num2str(p)])
+%     end
+    disp(' ');
     set(gca,'FontSize',12);
     set(gca,'LineWidth',1.5);
     ylabel('ROM [deg]');
@@ -84,7 +92,7 @@ for i=1:3
 end
 
 % delete box from figure
-delete_box
+% delete_box
 
 % save the figure
 % saveas(gcf,fullfile(figPath,'Figure2.svg'),'svg');
