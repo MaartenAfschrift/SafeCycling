@@ -6,8 +6,8 @@ clear all; close all; clc;
 DataPath  = 'E:\fietsproef\Data';
 FigPath = 'E:\fietsproef\Data\Figures\ShoulderCheck';
 nPP = 81;
-Folders = {'Classic'};
-OrderMeas = {'normal'};
+Folders = {'Classic','EBike'};
+OrderMeas = {'normal','Slow'};
 SensorLocation  = {'Steer','Frame','Trunk','KneeL','KneeR','Pelvis'};
 
 % load the info of the folders
@@ -73,11 +73,17 @@ if ComputeDataMatrix
                                 if strcmp(OrderMeas{i},'normal')
                                     headerSel = {'KEGEL NIET GEZIEN-normal-classic',...
                                         'VOET GROND-normal-classic'};
+                                elseif strcmp(OrderMeas{i},'slow')
+                                    headerSel = {'KEGEL NIET GEZIEN-slow-classic',...
+                                    'VOET GROND-slow-classic'};
                                 end
                             elseif strcmp(Folders{f},'EBike')
                                 if strcmp(OrderMeas{i},'normal')
                                     headerSel = {'KEGEL NIET GEZIEN-normal-ebike',...
                                         'VOET GROND-normal-ebike'};
+                                elseif strcmp(OrderMeas{i},'slow')
+                                    headerSel = {'KEGEL NIET GEZIEN-slow-ebike',...
+                                        'VOET GROND-slow-ebike'};
                                 end
                             end
                             % select colIndices
