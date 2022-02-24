@@ -1,100 +1,82 @@
-%% Bar Plots ROM and Steering angle
+% ----------------------------------------------
+% Figure with IMU outcomes during shoulder check
+%-----------------------------------------------
 
-% Figure with IMU outcomes during cycling parcours
-
+% clean the matlab environment
 clear all; close all; clc;
-% Datapath = 'S:\Data\fietsproef\Data';
-% DataPath  = 'E:\fietsproef\Data';
-DataPath = 'E:\Data\Fietsproef';
-% DataPath = 'S:\Data\fietsproef\Data';
 
-% Steering = load(fullfile(DataPath,'Outcomes','ShouldCheck_SteerAngle.mat'),'DataMatrix','header_DataMatrix');
-SensorOr = load(fullfile(DataPath,'Outcomes','ShouldCheckROM.mat'),'DataMatrix','header_DataMatrix');
+% load the datamatrix
+DataPath = pwd; % location with datamatrix
+Dat = load(fullfile(DataPath,'ShouldCheckROM.mat'),'DataMatrix','header_DataMatrix');
 
+% location to save the figures
 figPath = fullfile(pwd,'FigsPaper');
 
-%% FIgure steering angle
+% open a diary to log messages
 diary('Figure2_Log.txt');    
+
+% open a figure
 h = figure();
 set(h,'Position',[113   394   765   623]);
 
-CYoung = [0 0 1];
-CEld = [1 0 0];
+% color codes for young, older subjects
+CYoung = [0 114 178]./255;
+CEld = [213 94 0]./255;
 mk = 3;
 
-% plot figure
-DataMatrix = SensorOr.DataMatrix;
-subplot(2,2,1);
-iSelY = DataMatrix(:,5) == 0 &  DataMatrix(:,3) == 1 & DataMatrix(:,2) == 1 & DataMatrix(:,6) == 0;
-PlotBar(1,DataMatrix(iSelY,9),CYoung,mk); hold on;
-iSelE = DataMatrix(:,5) == 1 &  DataMatrix(:,3) == 1 & DataMatrix(:,2) == 1 & DataMatrix(:,6) == 0;
-PlotBar(2,DataMatrix(iSelE,9),CEld,mk); hold on;
-set(gca,'XTick',1:2);
-set(gca,'XTickLabel',{'Young','Older'});
+% get indices for specific columns
+iAge = strcmp(Dat.header_DataMatrix,'BoolElderly');
+iSpeed = strcmp(Dat.header_DataMatrix,'Speed-ID');
+iBike = strcmp(Dat.header_DataMatrix,'bike-ID');
+iError = strcmp(Dat.header_DataMatrix,'Error');
 
-% test normality
-[Wilk(1).HY, Wilk(1).pValueY, Wilk(1).WY] = swtest(DataMatrix(iSelY,9), 0.05);
-[Wilk(1).HE, Wilk(1).pValueE, Wilk(1).WE] = swtest(DataMatrix(iSelE,9), 0.05);
+% selected data for plots
+DataName = {'SteeringAngle','ROM-FrameTorso','ROM-FramePelvis','ROM-PelvisTorso'};
 
-%ttest ond data
-% if Wilk(1).HY == 0 && Wilk(1).HE ==0
-    [pairedttest,p,ci,stats] = ttest2(DataMatrix(iSelY,9),DataMatrix(iSelE,9),0.05);
-% else
-%     [p,h,stats] = ranksum(DataMatrix(iSelY,9),DataMatrix(iSelE,9),'alpha',0.05);
-% end
-disp(['t(' num2str(stats.df) ') = ' num2str(stats.tstat) ' , p = ' num2str(p)])
-disp('steering angle ')
-disp(['number of young subjects ' , num2str(sum(~isnan(DataMatrix(iSelY,9))))]);
-disp(['number of older subjects ' , num2str(sum(~isnan(DataMatrix(iSelE,9))))]);
-disp(' ');
-title(['Steering angle: p = ' num2str(p)]);
-set(gca,'FontSize',12);
-set(gca,'LineWidth',1.5);
-ylabel('Angle [deg]');
+% title for selected data
+TitleSel = {'Steering angle','ROM Frame-Torso','ROM Frame-Pelvis','ROM Pelvis-Torso'};
 
+% direct reference to data matrix
+DataMatrix = Dat.DataMatrix;
 
+% plot sensor orientations
+for i=1:4
+    subplot(2,2,i);
 
-DataMatrix = SensorOr.DataMatrix;
-iCol = [4 7 8];
-TitleSel = {'ROM Frame-C7','ROM Frame-Pelvis','ROM Pelvis-Trunk'};
-
-for i=1:3
-    subplot(2,2,i+1);
+    % select col
+    iCol = strcmp(Dat.header_DataMatrix,DataName{i});
     
-    iSelY = DataMatrix(:,5) == 0 &  DataMatrix(:,3) == 1 & DataMatrix(:,2) == 1 & DataMatrix(:,6) == 0;
-    PlotBar(1,DataMatrix(iSelY,iCol(i)),CYoung,mk); hold on;
-    iSelE = DataMatrix(:,5) == 1 &  DataMatrix(:,3) == 1 & DataMatrix(:,2) == 1 & DataMatrix(:,6) == 0;
-    PlotBar(2,DataMatrix(iSelE,iCol(i)),CEld,mk); hold on;
-    set(gca,'XTick',1:2);
-    set(gca,'XTickLabel',{'Young','Older'});
-    
-    [Wilk(1+i).HY, Wilk(1+i).pValueY, Wilk(1+i).WY] = swtest(DataMatrix(iSelY,iCol(i)), 0.05);
-    [Wilk(1+i).HE, Wilk(1+i).pValueE, Wilk(1+i).WE] = swtest(DataMatrix(iSelE,iCol(i)), 0.05);
-%     if Wilk(1+i).HY == 0 && Wilk(1+i).HE ==0    
-        [pairedttest,p,ci,stats] = ttest2(DataMatrix(iSelY,iCol(i)),DataMatrix(iSelE,iCol(i)),0.05);
-%     else
-%         [p,h,stats] = ranksum(DataMatrix(iSelY,iCol(i)),DataMatrix(iSelE,iCol(i)),'alpha',0.05);
-%     end
+    % plot datapoints
+    iSelY = DataMatrix(:,iAge) == 0 & DataMatrix(:,iSpeed) == 1 & ...
+        DataMatrix(:,iBike) == 1 & DataMatrix(:,iError) == 0;
+    PlotBar(1,DataMatrix(iSelY,iCol),CYoung,mk); hold on;
+    iSelE = DataMatrix(:,iAge) == 1 &  DataMatrix(:,iSpeed) == 1 &...
+        DataMatrix(:,iBike) == 1 & DataMatrix(:,iError) == 0;
+    PlotBar(2,DataMatrix(iSelE,iCol),CEld,mk); hold on;
+        
+    % paired t-test on the selected data
+    [pairedttest,p,ci,stats] = ttest2(DataMatrix(iSelY,iCol),...
+        DataMatrix(iSelE,iCol),0.05);
+
+    % display statistics
     disp(TitleSel{i});
-    disp(['number of young subjects ' , num2str(sum(~isnan(DataMatrix(iSelY,iCol(i)))))]);
-    disp(['number of older subjects ' , num2str(sum(~isnan(DataMatrix(iSelE,iCol(i)))))]);
+    disp(['number of young subjects ' , num2str(sum(~isnan(DataMatrix(iSelY,iCol))))]);
+    disp(['number of older subjects ' , num2str(sum(~isnan(DataMatrix(iSelE,iCol))))]);
     disp(' ');
-    title([TitleSel{i} ': p = ' num2str(p)]);
-    
-%     if Wilk(1+i).HY == 0 && Wilk(1+i).HE ==0    
-        disp(['t(' num2str(stats.df) ') = ' num2str(stats.tstat) ' , p = ' num2str(p)])
-%     end
+    title([TitleSel{i} ': p = ' num2str(p)]);    
+    disp(['t(' num2str(stats.df) ') = ' num2str(stats.tstat) ' , p = ' num2str(p)])
     disp(' ');
+
+    % labels
     set(gca,'FontSize',12);
     set(gca,'LineWidth',1.5);
-    ylabel('ROM [deg]');
-    
+    if i == 1
+        ylabel('Angle [deg]');
+    else
+        ylabel('ROM [deg]');
+    end
+    set(gca,'XTick',1:2);
+    set(gca,'XTickLabel',{'Young','Older'});
+    set(gca,'Box','off')    
 end
 
-% delete box from figure
-% delete_box
-
-% save the figure
-% saveas(gcf,fullfile(figPath,'Figure2.svg'),'svg');
-% saveas(gcf,fullfile(figPath,'Figure2.png'),'png');
-% diary off
