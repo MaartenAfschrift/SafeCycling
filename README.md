@@ -1,10 +1,6 @@
 # SafeCyling
 
-
-
 This repository contains all the software used for the analysis of the data collected during the master thesis of Anouck Matthijs and Theresa De Ryck. All subjects did a cycling parkours on a conventional bike and e-bike while cycling at preferred speed, half the preferred speed and preferred speed in combination with a dual task (identifying pictures of objects). All details of the cycling parcours, collected data and ... can be found in the thesis of Anouck and Theresa and the journal publication (work in progress).
-
-
 
 ## Overview of data processing
 
